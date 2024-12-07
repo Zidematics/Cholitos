@@ -317,6 +317,9 @@ main .tokenomics .pie-chart {
     justify-content: center;
     pointer-events: none;
 }
+main .tokenomics .pie-chart {
+    scale: 1;
+}
 main .roadmap {
     position: relative;
     /* padding: 1rem 9rem; */
