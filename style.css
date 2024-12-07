@@ -110,6 +110,7 @@ main .hero-section .hero-background {
     object-fit: cover;
     width: 100%;
     pointer-events: none;
+    height: 150%;
 }
 main .hero-section .ellipse {
     transform: translate(-10%, 0px);
@@ -229,12 +230,12 @@ main .hero-section .hero-content a:hover {
 }
 main .about-us {
     position: relative;
-    height: 104.5rem;
+    height: 104.5vw;
     padding: 1rem 9rem;
     margin: 0;
 }
 main h1:not(#first-h1) {
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: 100;
     /* margin-left: 0; */
     position: absolute;
@@ -243,7 +244,7 @@ main h1:not(#first-h1) {
     z-index: 100;
 }
 main .about-us h1 {
-    top: -48rem;
+    top: -4%;
     text-shadow: 0.3rem 0.3rem #9A2FBE;
     color: white;
 }
@@ -254,36 +255,37 @@ main .about-us .aboutus-background {
     opacity: 100;
     transform: translate(0px, 0px);
     position: absolute;
-    right: 0;
-    top: -55rem;
+    left: 0;
+    top: -10%;
     object-fit: cover;
     width: 100%;
     pointer-events: none;
     z-index: 0;
+    height: auto;
 }
 main .about-us .aboutus-1,
 main .about-us .aboutus-2 {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     left: 0;
-    top: -45rem;
-    padding: 1rem 9rem;
-    gap: 1rem;
+    top: 0%;
+    gap: 2vw;
 }
-main .about-us .aboutus-1 img {
-    scale: 1;
+main .about-us .aboutus-1 img,
+main .about-us .aboutus-2 img {
+    width: 40%;
 }
 main .about-us p {
-    font-size: 1.25rem;
-    padding-top: 4rem;
+    font-size: 1.25vw;
+    padding-top: 2%;
     color: white;
 }
 main .about-us #aboutus-2 {
-    top: -25rem;
+    top: -5%;
 }
 main .tokenomics {
     position: relative;
@@ -295,11 +297,10 @@ main .tokenomics .tokenomics-background {
     translate: none;
     rotate: none;
     scale: none;
-    opacity: 100;
     transform: translate(0px, 0px);
     position: absolute;
     right: 0;
-    top: -95rem;
+    top: -10%;
     object-fit: cover;
     width: 100%;
     pointer-events: none;
