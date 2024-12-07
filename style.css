@@ -28,15 +28,15 @@ header {
 header .logo img {
     /* width: 100%;
     height: 100%; */
-    width: 6.3rem;
-    height: 6.3rem;
+    width: 6.3vw;
+    height: 6.3vw;
     cursor: pointer;
 }
 header .nav-list ul {
     mix-blend-mode: color-dodge;
     display: flex;
     /* flex-direction: row; */
-    font-size: 2.1466rem;
+    font-size: 2.1466vw;
     font-weight: 400;
     line-height: normal;
     /* letter-spacing: -.0215rem; */
@@ -87,7 +87,7 @@ header .nav-list ul .buy-button:hover {
 main {
     display: block;
     /* unicode-bidi: isolate; */
-    position: relative;
+    position: absolute;
     right: 0;
     width: 100%;
     margin: auto;
@@ -95,7 +95,7 @@ main {
 }
 main .hero-section {
     position: relative;
-    height: 104.5rem;
+    height: 100vh;
     padding: 1rem 9rem;
 }
 main .hero-section .hero-background {
@@ -105,7 +105,7 @@ main .hero-section .hero-background {
     opacity: 100;
     transform: translate(0px, 0px);
     position: absolute;
-    top: -12rem;
+    top: -20%;
     right: 0;
     object-fit: cover;
     width: 100%;
@@ -113,7 +113,7 @@ main .hero-section .hero-background {
 }
 main .hero-section .ellipse {
     transform: translate(-10%, 0px);
-    width: 50%;
+    width: 50vw;
     position: absolute;
     left: 0;
     top: -12rem;
@@ -121,8 +121,9 @@ main .hero-section .ellipse {
 }
 main .hero-section .hero-alien {
     position: absolute;
-    right: 0;
-    top: -10rem;
+    right: -2rem;
+    bottom: 0;
+    width: 50vw;
     /* animation: floatUpDown 3s ease-in-out infinite; */
 }
 
@@ -145,25 +146,26 @@ main .hero-section .hero-alien {
 main .hero-section .alien-spaceship {
     position: absolute;
     left: 7rem;
-    top: -8rem;
+    top: 10%;
+    width: 25vw;
     animation: floatUpDown 3s ease-in-out infinite;
 }
 main .hero-section .hero-content {
     position: absolute;
     left: 9rem;
-    top: 10rem;
+    transform: translateY(100%);
     justify-content: space-between;
     display: flex;
-    gap: 20rem;
+    gap: 20vw;
     width: 100%;
     /* display: flex;
     justify-content: flex-end;
     flex-direction: column; */
 }
 main .hero-section .hero-content h1 {
-    font-size: 1.25rem;
+    font-size: 1.25vw;
     font-family: "Poppins", sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     color: white;
     width: auto;
 }
@@ -171,30 +173,30 @@ main .hero-section .hero-content h1 span:first-of-type {
     font-family: "Creepster", system-ui;
     font-weight: 400;
     color: #9A2FBE;
-    font-size: 2rem;
+    font-size: 2vw;
 }
 main .hero-section .hero-content h1 span:nth-of-type(2) {
     font-family: "Creepster", system-ui;
     font-weight: 400;
     color: #B7FCB1;
-    font-size: 2rem;
+    font-size: 2vw;
 }
 main .hero-section .hero-content h6 {
-    font-size: 12.5rem;
+    font-size: 12.5vw;
     color: #B7FCB1;
     text-shadow: 0.5rem 0.5rem #9A2FBE;
     position: absolute;
     left: 0;
-    top: -26.5rem;
+    top: -26vw;
 }
 main .hero-section .hero-content p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.5vw;
     width: 50%;
     position: absolute;
     left: 0;
-    top: 16rem;
+    top: 17vw;
     color: white;
 }
 main .hero-section .hero-content a {
@@ -205,7 +207,7 @@ main .hero-section .hero-content a {
     /* stroke: 1px solid #9A2FBE; */
     box-shadow: 4px 4px #9A2FBE;
     display: flex;
-    height: 4.2341rem;
+    height: 5vw;
     padding: 0rem 1.6392rem;
     justify-content: center;
     align-items: center;
@@ -217,8 +219,8 @@ main .hero-section .hero-content a {
     background-size: cover;
     text-decoration: none;  
     position: absolute;
-    top: 23rem;
-    font-size: 2.1466rem;
+    top: 27.5vw;
+    font-size: 2.1466vw;
 }
 main .hero-section .hero-content a:hover {
     box-shadow: none;
@@ -318,7 +320,7 @@ main .tokenomics .pie-chart {
     pointer-events: none;
 }
 main .tokenomics .pie-chart {
-    scale: 1;
+    scale: 0.5;
 }
 main .roadmap {
     position: relative;
