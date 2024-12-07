@@ -1,0 +1,347 @@
+body {
+    /* background-image: url("src\assets\star background.svg"); */
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    /* scroll-behavior: auto !important;
+    overscroll-behavior-x: none;
+    -webkit-text-size-adjust: none; */
+}
+header {
+    /* position: fixed; */
+    z-index: 100;
+    top: 0rem;
+    left: 0;
+    right: 0;
+    padding: .5rem 9rem;
+    position: sticky;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img {
+    /* width: 100%;
+    height: 100%; */
+    width: 6.3rem;
+    height: 6.3rem;
+    cursor: pointer;
+}
+header .nav-list ul {
+    mix-blend-mode: color-dodge;
+    display: flex;
+    /* flex-direction: row; */
+    font-size: 2.1466rem;
+    font-weight: 400;
+    line-height: normal;
+    /* letter-spacing: -.0215rem; */
+    align-items: center;
+    gap: 1rem;
+}
+header .nav-list ul li {
+    padding: 15px 2rem;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+}
+header .nav-list ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .35s ease;
+    mix-blend-mode: difference;
+}
+header .nav-list ul li a:hover {
+    color: #B7FCB1;
+}
+header .nav-list ul .buy-button {
+    border-radius: 15px;
+    /* height: 70px; */
+    color: black;
+    background: #B7FCB1;
+    /* stroke: 1px solid #9A2FBE; */
+    box-shadow: 4px 4px #9A2FBE;
+    display: flex;
+    height: 3.9341rem;
+    padding: 0rem 1.6392rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.9375remrem;
+    border: .082rem solid #9A2FBE;
+    /* box-shadow: .3278rem .3278rem #000; */ 
+    transition: .35s ease;
+    mix-blend-mode: color-dodge;
+    background-size: cover;
+    text-decoration: none;
+}
+header .nav-list ul .buy-button:hover {
+    box-shadow: none;
+    background-color: #65fc57;
+    transform: translate(2px, 2px);
+}
+main {
+    display: block;
+    /* unicode-bidi: isolate; */
+    position: relative;
+    right: 0;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+main .hero-section {
+    position: relative;
+    height: 104.5rem;
+    padding: 1rem 9rem;
+}
+main .hero-section .hero-background {
+    translate: none;
+    rotate: none;
+    scale: none;
+    opacity: 100;
+    transform: translate(0px, 0px);
+    position: absolute;
+    top: -12rem;
+    right: 0;
+    object-fit: cover;
+    width: 100%;
+    pointer-events: none;
+}
+main .hero-section .ellipse {
+    transform: translate(-10%, 0px);
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: -12rem;
+    pointer-events: none;
+}
+main .hero-section .hero-alien {
+    position: absolute;
+    right: 0;
+    top: -10rem;
+    /* animation: floatUpDown 3s ease-in-out infinite; */
+}
+
+/* Define the floating animation */
+
+@keyframes floatUpDown {
+    0% {
+        /* transform: translateY(-1rem);  */
+        top: -10rem;
+    }
+    50% {
+        /* transform: translateY(-10rem);  */
+        top: -9rem;
+    }
+    100% { 
+        /* transform: translateY(-1rem); */
+        top: -10rem;
+    }
+}
+main .hero-section .alien-spaceship {
+    position: absolute;
+    left: 7rem;
+    top: -8rem;
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+main .hero-section .hero-content {
+    position: absolute;
+    left: 9rem;
+    top: 10rem;
+    justify-content: space-between;
+    display: flex;
+    gap: 20rem;
+    width: 100%;
+    /* display: flex;
+    justify-content: flex-end;
+    flex-direction: column; */
+}
+main .hero-section .hero-content h1 {
+    font-size: 1.25rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color: white;
+    width: auto;
+}
+main .hero-section .hero-content h1 span:first-of-type {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    color: #9A2FBE;
+    font-size: 2rem;
+}
+main .hero-section .hero-content h1 span:nth-of-type(2) {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    color: #B7FCB1;
+    font-size: 2rem;
+}
+main .hero-section .hero-content h6 {
+    font-size: 12.5rem;
+    color: #B7FCB1;
+    text-shadow: 0.5rem 0.5rem #9A2FBE;
+    position: absolute;
+    left: 0;
+    top: -26.5rem;
+}
+main .hero-section .hero-content p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 16rem;
+    color: white;
+}
+main .hero-section .hero-content a {
+    border-radius: 15px;
+    /* height: 70px; */
+    color: black;
+    background: #B7FCB1;
+    /* stroke: 1px solid #9A2FBE; */
+    box-shadow: 4px 4px #9A2FBE;
+    display: flex;
+    height: 4.2341rem;
+    padding: 0rem 1.6392rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.9375remrem;
+    border: .082rem solid #9A2FBE;
+    /* box-shadow: .3278rem .3278rem #000; */ 
+    transition: .35s ease;
+    /* mix-blend-mode: color-dodge; */
+    background-size: cover;
+    text-decoration: none;  
+    position: absolute;
+    top: 23rem;
+    font-size: 2.1466rem;
+}
+main .hero-section .hero-content a:hover {
+    box-shadow: none;
+    background-color: #65fc57;
+    transform: translate(2px, 2px);
+}
+main .about-us {
+    position: relative;
+    height: 104.5rem;
+    padding: 1rem 9rem;
+    margin: 0;
+}
+main h1:not(#first-h1) {
+    font-size: 5rem;
+    font-weight: 100;
+    /* margin-left: 0; */
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+main .about-us h1 {
+    top: -48rem;
+    text-shadow: 0.3rem 0.3rem #9A2FBE;
+    color: white;
+}
+main .about-us .aboutus-background {
+    translate: none;
+    rotate: none;
+    scale: none;
+    opacity: 100;
+    transform: translate(0px, 0px);
+    position: absolute;
+    right: 0;
+    top: -55rem;
+    object-fit: cover;
+    width: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+main .about-us .aboutus-1,
+main .about-us .aboutus-2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    left: 0;
+    top: -45rem;
+    padding: 1rem 9rem;
+    gap: 1rem;
+}
+main .about-us .aboutus-1 img {
+    scale: 1;
+}
+main .about-us p {
+    font-size: 1.25rem;
+    padding-top: 4rem;
+    color: white;
+}
+main .about-us #aboutus-2 {
+    top: -25rem;
+}
+main .tokenomics {
+    position: relative;
+    height: 104.5rem;
+    padding: 1rem 9rem;
+    margin: 0;
+}
+main .tokenomics .tokenomics-background {
+    translate: none;
+    rotate: none;
+    scale: none;
+    opacity: 100;
+    transform: translate(0px, 0px);
+    position: absolute;
+    right: 0;
+    top: -95rem;
+    object-fit: cover;
+    width: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+main .tokenomics h1 {
+    top: -88rem;
+    text-shadow: 0.3rem 0.3rem #9A2FBE;
+    color: white;
+}
+main .tokenomics .pie-chart {
+    position: relative;
+    padding: 1rem 9rem;
+    top: -78rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+main .roadmap {
+    position: relative;
+    /* padding: 1rem 9rem; */
+    top: -130rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #B7FCB1;
+    height: 100%;
+    overflow: hidden;
+}
+main .roadmap h1 {
+    top: 4rem;
+    text-shadow: 0.3rem 0.3rem black;
+    color: #9A2FBE;
+}
+main .roadmap img {
+    position: relative;
+    margin: auto;
+    right: 0;
+    top: 2rem;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+main .roadmap span {
+    position: absolute;
+}
