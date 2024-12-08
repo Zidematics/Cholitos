@@ -383,24 +383,17 @@ main .roadmap span {
     flex-direction: column;
     transition: .35s ease;
     cursor: pointer;
+    transition: .35s ease;
 }
-main .roadmap span h2 {
-    font-size: 2.2vw;
-    font-weight: 100;
-    color: white;
+main .roadmap span img {
     position: absolute;
-    top: -5%;
-}
-main .roadmap span h3 {
-    font-size: 6vw;
-    color: white;
-    position: absolute;
-    top: -30%;
+    scale: 0.8;
+    transform: translate(0%, -15%);
 }
 main .roadmap .phase-1 {
     background-color: #9A2FBE;
     left: 13.5%;
-    top: 58%;
+    top:58%;
 }
 main .roadmap .phase-1:hover {
     /* scale: 0.95; */
@@ -409,24 +402,59 @@ main .roadmap .phase-1:hover {
     box-shadow: none;
 }
 main .roadmap .phase-2 {
-    background-color: blue;
+    background-color: #FB9805;
     left: 31%;
     top: 42%;
 }
 main .roadmap .phase-2:hover {
     /* scale: 0.95; */
-    background-color: rgb(47, 88, 250);
+    background-color: #fcb447;
     transform: translate(4px, 4px);
     box-shadow: none;
 }
 main .roadmap .phase-3 {
-    background-color: orange;
+    background-color: #0000FF;
     left: 47.5%;
     top: 60%;
 }
 main .roadmap .phase-3:hover {
     /* scale: 0.95; */
-    background-color: rgb(252, 178, 42);
+    background-color: #3a3afb;
     transform: translate(4px, 4px);
     box-shadow: none;
+}
+main .roadmap .phase-4 {
+    background-color: white;
+    left: 64.3%;
+    top: 40%;
+}
+main .roadmap .phase-4:hover {
+    /* scale: 0.95; */
+    background-color: rgb(240, 240, 240);
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+main .roadmap .phase-5 {
+    background-color: #35B4DE;
+    left: 81%;
+    top: 62%;
+}
+main .roadmap .phase-5:hover {
+    /* scale: 0.95; */
+    background-color: #0db6ee;
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+@media screen and (max-width: 1490px) {
+    main .roadmap span {
+        transform: scale(0.8);
+    }
+    main .roadmap .phase-2 {
+        left: 26%;
+        top: 42%;
+    }
+    main .roadmap .phase-5 {
+        left: 82%;
+        top: 62%;
+    }
 }
