@@ -85,13 +85,15 @@ header .nav-list ul .buy-button:hover {
     transform: translate(2px, 2px);
 }
 main {
-    display: block;
+    display: flex;
+    flex-direction: column;
     /* unicode-bidi: isolate; */
-    position: absolute;
-    right: 0;
+    position: relative;
+    left: 0;
     width: 100%;
     margin: auto;
     padding: 0;
+    gap: 0;
 }
 main .hero-section {
     position: relative;
@@ -105,8 +107,7 @@ main .hero-section .hero-background {
     opacity: 100;
     transform: translate(0px, 0px);
     position: absolute;
-    top: -40%;
-    margin-top: 0;
+    top: -30%;
     right: 0;
     object-fit: cover;
     width: 100%;
@@ -232,7 +233,7 @@ main .hero-section .hero-content a:hover {
 main .about-us {
     position: relative;
     height: 104.5vw;
-    padding: 1rem 9rem;
+    padding: 0rem 9rem;
     margin: 0;
 }
 main h1:not(#first-h1) {
@@ -292,7 +293,8 @@ main .tokenomics {
     position: relative;
     height: 104.5rem;
     padding: 1rem 9rem;
-    margin: 0;
+    left: 0;
+    margin-top: -49%;
 }
 main .tokenomics .tokenomics-background {
     translate: none;
@@ -301,39 +303,52 @@ main .tokenomics .tokenomics-background {
     transform: translate(0px, 0px);
     position: absolute;
     right: 0;
-    top: -10%;
     object-fit: cover;
     width: 100%;
     pointer-events: none;
     z-index: 0;
 }
 main .tokenomics h1 {
-    top: -88rem;
+    /* top: -88rem; */
+    top: 7%;
     text-shadow: 0.3rem 0.3rem #9A2FBE;
     color: white;
 }
 main .tokenomics .pie-chart {
     position: relative;
     padding: 1rem 9rem;
-    top: -78rem;
     display: flex;
     align-items: center;
     justify-content: center;
     pointer-events: none;
+    top: 16%;
 }
-main .tokenomics .pie-chart {
-    scale: 0.5;
+main .tokenomics .pie-chart img {
+    width: 80%;
+    min-width: 90%;
 }
 main .roadmap {
     position: relative;
-    /* padding: 1rem 9rem; */
-    top: -130rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #B7FCB1;
-    height: 100%;
     overflow: hidden;
+    height: 55rem;
+    left: 0;
+    margin-top: -44%;
+}
+@media screen and (max-width: 1430px) {
+    main .roadmap {
+        margin-top: -60%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    main .roadmap {
+        margin-top: -75%;
+    }
+}
+@media screen and (max-width: 1140px) {
+    main .roadmap {
+        margin-top: -90%;
+    }
 }
 main .roadmap h1 {
     top: 4rem;
