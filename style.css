@@ -211,7 +211,7 @@ main .hero-section .hero-content a {
     box-shadow: 4px 4px #9A2FBE;
     display: flex;
     height: 5vw;
-    padding: 0rem 1.6392rem;
+    padding: 0rem 3.6392rem;
     justify-content: center;
     align-items: center;
     border-radius: 0.9375remrem;
@@ -285,6 +285,10 @@ main .about-us p {
     font-size: 1.25vw;
     padding-top: 2%;
     color: white;
+}
+main .about-us p span {
+    font-weight: 900;
+    font-style: italic;
 }
 main .about-us #aboutus-2 {
     top: -5%;
@@ -362,8 +366,67 @@ main .roadmap img {
     top: 2rem;
     width: 100%;
     height: 100%;
+    scale: 1.1;
     pointer-events: none;
 }
 main .roadmap span {
     position: absolute;
+    padding: 2rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 4px #000000;
+    z-index: 10;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    transition: .35s ease;
+    cursor: pointer;
+}
+main .roadmap span h2 {
+    font-size: 2.2vw;
+    font-weight: 100;
+    color: white;
+    position: absolute;
+    top: -5%;
+}
+main .roadmap span h3 {
+    font-size: 6vw;
+    color: white;
+    position: absolute;
+    top: -30%;
+}
+main .roadmap .phase-1 {
+    background-color: #9A2FBE;
+    left: 13.5%;
+    top: 58%;
+}
+main .roadmap .phase-1:hover {
+    /* scale: 0.95; */
+    background-color: #c028f3;
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+main .roadmap .phase-2 {
+    background-color: blue;
+    left: 31%;
+    top: 42%;
+}
+main .roadmap .phase-2:hover {
+    /* scale: 0.95; */
+    background-color: rgb(47, 88, 250);
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+main .roadmap .phase-3 {
+    background-color: orange;
+    left: 47.5%;
+    top: 60%;
+}
+main .roadmap .phase-3:hover {
+    /* scale: 0.95; */
+    background-color: rgb(252, 178, 42);
+    transform: translate(4px, 4px);
+    box-shadow: none;
 }
