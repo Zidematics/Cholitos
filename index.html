@@ -54,12 +54,12 @@
             <h1>cholinomics</h1>
             <img src="src\orange background.svg" alt="" class="tokenomics-background">
             <div class="pie-chart">
-                <img src="src/Pizza.png" alt="">
+                <img src="src\pizza.png" alt="">
             </div>
         </div>
         <div class="roadmap">
             <h1>roadmap</h1>
-            <span class="phase-1">
+            <span class="phase-1" onclick="showPopup()">
                 <img src="src\phase 1.svg" alt="" srcset="">
             </span>
             <span class="phase-2">
@@ -74,7 +74,36 @@
             <span class="phase-5">
                 <img src="src\phase 5.svg" alt="">
             </span>
-            <img src="src\road map.svg" alt="" class="roadmap-background">
+            <img src="src\roadmap-bg.svg" alt="" class="roadmap-background">
+        </div>
+        <div class="buy-token">
+            <h1>buy cholitos</h1>
+            <img src="src\white bg.svg" alt="" class="buycholitos-background">
+        </div>
+        <div class="blur-bg">
+            <div class="phase-popup">
+                <div class="phase-popup-header">
+                    <div></div>
+                    <h2>phase 1</h2>
+                    <button class="cancel-button" onclick="hidePopup()">
+                        <img src="src\cancel icon.svg" alt="">
+                    </button>
+                </div>
+                <div class="phase-popup-body">
+                    <img src="src\Phase1-cholian.svg" alt="">
+                    <ul>
+                        <li>Stealth mint</li>
+                        <li>Web development</li>
+                        <li>Plan out token</li>
+                        <li>Full body avatar design</li>
+                        <li>Find animators/content creators</li>
+                        <li>Start thinking of V2s</li>
+                        <li>Giveaways, mini games, look for investors</li>
+                        <li>Check out tech, network, develop team, start first space and design merch.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="bg-popup" onclick="hidePopup()"></span>
         </div>
     </main>
     <script src="index.js"></script>

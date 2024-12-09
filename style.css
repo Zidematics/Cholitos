@@ -71,7 +71,6 @@ header .nav-list ul .buy-button {
     padding: 0rem 1.6392rem;
     justify-content: center;
     align-items: center;
-    border-radius: 0.9375remrem;
     border: .082rem solid #9A2FBE;
     /* box-shadow: .3278rem .3278rem #000; */ 
     transition: .35s ease;
@@ -95,6 +94,24 @@ main {
     padding: 0;
     gap: 0;
 }
+.alien-spaceship, .hero-content, .hero-alien, h1 {
+    animation-name: slideUp;
+    animation-name: slideUp;
+    animation-duration: 1s;
+    animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+}
+  
 main .hero-section {
     position: relative;
     height: 100vh;
@@ -335,7 +352,7 @@ main .roadmap {
     position: relative;
     background-color: #B7FCB1;
     overflow: hidden;
-    height: 55rem;
+    height: 70rem;
     left: 0;
     margin-top: -44%;
 }
@@ -363,13 +380,14 @@ main .roadmap img {
     position: relative;
     margin: auto;
     right: 0;
-    top: 2rem;
+    top: -100px;
     width: 100%;
     height: 100%;
     scale: 1.1;
     pointer-events: none;
 }
 main .roadmap span {
+    cursor: pointer;
     position: absolute;
     padding: 2rem;
     width: 100px;
@@ -382,32 +400,29 @@ main .roadmap span {
     align-items: center;    
     flex-direction: column;
     transition: .35s ease;
-    cursor: pointer;
-    transition: .35s ease;
 }
-main .roadmap span img {
+main .roadmap span img:first-of-type {
     position: absolute;
     scale: 0.8;
-    transform: translate(0%, -15%);
+    margin: auto;
+    transform: translateY(80%);
 }
 main .roadmap .phase-1 {
     background-color: #9A2FBE;
-    left: 13.5%;
-    top:58%;
+    left: 10%;
+    top: 47%;
 }
 main .roadmap .phase-1:hover {
-    /* scale: 0.95; */
     background-color: #c028f3;
     transform: translate(4px, 4px);
     box-shadow: none;
 }
 main .roadmap .phase-2 {
     background-color: #FB9805;
-    left: 31%;
-    top: 42%;
+    left: 30%;
+    top: 32%;
 }
 main .roadmap .phase-2:hover {
-    /* scale: 0.95; */
     background-color: #fcb447;
     transform: translate(4px, 4px);
     box-shadow: none;
@@ -415,32 +430,29 @@ main .roadmap .phase-2:hover {
 main .roadmap .phase-3 {
     background-color: #0000FF;
     left: 47.5%;
-    top: 60%;
+    top: 48.5%;
 }
 main .roadmap .phase-3:hover {
-    /* scale: 0.95; */
     background-color: #3a3afb;
     transform: translate(4px, 4px);
     box-shadow: none;
 }
 main .roadmap .phase-4 {
     background-color: white;
-    left: 64.3%;
-    top: 40%;
+    left: 66%;
+    top: 30%;
 }
 main .roadmap .phase-4:hover {
-    /* scale: 0.95; */
     background-color: rgb(240, 240, 240);
     transform: translate(4px, 4px);
     box-shadow: none;
 }
 main .roadmap .phase-5 {
     background-color: #35B4DE;
-    left: 81%;
-    top: 62%;
+    left: 84.5%;
+    top: 50%;
 }
 main .roadmap .phase-5:hover {
-    /* scale: 0.95; */
     background-color: #0db6ee;
     transform: translate(4px, 4px);
     box-shadow: none;
@@ -458,3 +470,176 @@ main .roadmap .phase-5:hover {
         top: 62%;
     }
 }
+
+main .blur-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: hidden;
+    transition: .2s ease;
+    background-color: rgba(0, 0, 0, 0.403);
+    backdrop-filter: blur(10px);
+    overflow: visible;
+}
+
+
+/* Popup container */
+main .blur-bg .phase-popup {
+    width: 50%;
+    max-width: 80%;
+    overflow: hidden;
+    animation: slide-in 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #9A2FBE;
+    border-radius: 30px;
+    box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.583);
+    box-sizing: border-box;
+    padding: 0rem 3rem 3rem 3rem;
+    gap: 1rem;
+    z-index: 20;
+}
+
+/* Header of the popup */
+main .blur-bg .phase-popup .phase-popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    height: 10rem;
+}
+main .blur-bg .phase-popup .phase-popup-header h2 {
+    font-size: 5vw;
+    font-weight: 100;
+    color: #fff;
+    /* margin-top: 10%; */
+}
+/* Cancel button in the header */
+main .blur-bg .phase-popup .phase-popup-header .cancel-button {
+    background: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 4px 4px white;
+    border-radius: 15px;
+    display: flex;
+    height: 3.9341rem;
+    width: 3.9341rem;
+    padding: 1.6392rem 1.6392rem;
+    justify-content: center;
+    align-items: center;
+    border: .082rem solid white; 
+    transition: .2s ease;
+}
+main .blur-bg .phase-popup .phase-popup-header .cancel-button:hover {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+}
+main .blur-bg .phase-popup .phase-popup-header .cancel-button img {
+    width: 10rem;
+    pointer-events: none;
+}
+
+/* Popup body */
+main .blur-bg .phase-popup .phase-popup-body {
+    padding-right: 0.5rem;
+    padding-left: 0rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+main .blur-bg .phase-popup .phase-popup-body img {
+    width: 40%;
+    height: auto;
+}
+
+main .blur-bg .phase-popup .phase-popup-body ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 60%;
+    gap: .2rem;
+}
+main .blur-bg .phase-popup .phase-popup-body ul li {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.3vw;
+    color: white;
+    line-height: 1.5;
+    text-align: left;
+    white-space: pre-line;
+}
+main .blur-bg span{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+}
+
+/* Keyframe animation for popup */
+@keyframes slide-in {
+    from {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* main .blur-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.403);
+    backdrop-filter: blur(10px);
+    overflow: visible;
+    z-index: 500;
+    position: fixed;
+    top: 0%;
+}
+main .blur-bg .phase-popup {
+    width: 50%;
+    height: 50vh;
+    position: absolute;
+    transform: translate(50%, 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #9A2FBE;
+    border-radius: 30px;
+    box-shadow: 1px 1px 50px black;
+    margin: 2rem;
+    box-sizing: border-box;
+}
+main .blur-bg .phase-popup .phase-popup-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+main .blur-bg .phase-popup .phase-popup-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+main .blur-bg .phase-popup .phase-popup-body img {
+    margin-bottom: 0;
+    width: 30vw;
+} */

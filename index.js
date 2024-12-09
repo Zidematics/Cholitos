@@ -27,5 +27,27 @@ container.addEventListener('mouseleave', () => {
 
 
 
+// Onscroll effect
+
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (document.documentElement.scrollTop > 350) {
+    document.getElementById("myImg").className = "slideUp";
+  }
+}
 
 
+//pop-up effect for phases
+
+const popupBg = document.querySelector('main .blur-bg');
+
+// Function to show the popup
+function showPopup() {
+    popupBg.style.visibility = 'visible'
+}
+
+// Function to hide the popup
+function hidePopup() {
+    popupBg.style.visibility = 'hidden'
+}
