@@ -883,18 +883,27 @@ main .faq .socials a:hover {
         height: auto;
     }
     header .nav-list ul {
-        font-size: 4.1466vw;
+        font-size: 1.25rem;
         font-weight: 400;
+        color: red;
     }
-    header .nav-list ul li {
-        padding: 0;
+    header .nav-list ul li a{
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: white;
     }
     header .nav-list ul .buy-button {
         display: none;
     }
+    main {
+        position: relative;
+    }
     main .hero-section {
+        position: relative;
         padding-left: 2rem;
-        margin-top: -6%;
+        top: 0;
+        left: 0;
+        height: 100vh;
     }
     main .hero-section .ellipse {
         transform: translate(-10%, 40%);
