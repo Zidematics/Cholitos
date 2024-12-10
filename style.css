@@ -919,13 +919,13 @@ main .faq .socials a:hover {
     }
     main .hero-section .hero-alien {
         margin: auto;
-        bottom: 35%;
-        right: 0px;
+        bottom: 30%;
+        right: 25px;
         margin-left: 0;
         transform: scale(1.2);
     }
     main .hero-section .alien-spaceship {
-        left: -9rem;
+        left: -4rem;
         margin-top: 30%;
         width: 70vw;
     }
@@ -958,7 +958,7 @@ main .faq .socials a:hover {
     main .hero-section .hero-content p {
         font-size: 0.8rem;
         position: static;
-        width: 350px;
+        width: 320px;
     }
     main .hero-section .hero-content a {
         border-radius: 10px;
