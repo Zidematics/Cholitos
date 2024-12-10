@@ -18,8 +18,7 @@
         </div>
         <div class="nav-list">
             <ul>
-                <li><a href="">Tokenomics</a></li>
-                <li><a href="">Roadmap</a></li>
+                <!-- <li><a href="">White Paper</a></li> -->
                 <li><a href="">Shop</a></li>
                 <a href="" class="buy-button">Buy $cholitos</a>
             </ul>
@@ -30,6 +29,7 @@
             <img src="src\star background.svg" alt="" class="hero-background">
             <img src="src\Ellipse 1.svg" alt="" class="ellipse">
             <img src="src\hero page cholito.svg" alt="" class="hero-alien">
+            <img src="src\mobile cholian.svg" alt="" class="moblie-cholian">
             <img src="src\Alien space ship.svg" alt="" class="alien-spaceship">
             <div class="hero-content">
                 <h1 id="first-h1">YOU DON’T HAVE TO BE A <span>CHOLO</span> TO BE A <span>CHOLITO</span></h1>
@@ -59,33 +59,36 @@
         </div>
         <div class="roadmap">
             <h1>roadmap</h1>
-            <span class="phase-1" onclick="showPopup()">
+            <span class="phase-1" onclick="showPopup1()">
                 <img src="src\phase 1.svg" alt="" srcset="">
             </span>
-            <span class="phase-2">
+            <span class="phase-2" onclick="showPopup2()">
                 <img src="src\phase 2.svg" alt="">
             </span>
-            <span class="phase-3">
+            <span class="phase-3" onclick="showPopup3()">
                 <img src="src\phase 3.svg" alt="">
             </span>
-            <span class="phase-4">
+            <span class="phase-4" onclick="showPopup4()">
                 <img src="src\phase 4.svg" alt="">
             </span>
-            <span class="phase-5">
+            <span class="phase-5" onclick="showPopup5()">
                 <img src="src\phase 5.svg" alt="">
             </span>
-            <img src="src\roadmap-bg.svg" alt="" class="roadmap-background">
+            <img src="src\roadmap-bg.svg" alt="" class="\d">
         </div>
         <div class="buy-token">
             <h1>buy cholitos</h1>
             <img src="src\white bg.svg" alt="" class="buycholitos-background">
+            <div class="buy-image">
+                <img src="src\how to buy cholito.svg" alt="">
+            </div>
         </div>
         <div class="blur-bg">
-            <div class="phase-popup">
+            <div class="phase-popup1" id="phase-popup">
                 <div class="phase-popup-header">
                     <div></div>
                     <h2>phase 1</h2>
-                    <button class="cancel-button" onclick="hidePopup()">
+                    <button class="cancel-button" onclick="hidePopup1()">
                         <img src="src\cancel icon.svg" alt="">
                     </button>
                 </div>
@@ -103,7 +106,130 @@
                     </ul>
                 </div>
             </div>
-            <span class="bg-popup" onclick="hidePopup()"></span>
+            <!-- <div class="phase-popup2" id="phase-popup">
+                <div class="phase-popup-header">
+                    <div></div>
+                    <h2>phase 2</h2>
+                    <button class="cancel-button" onclick="hidePopup()">
+                        <img src="src\cancel icon.svg" alt="">
+                    </button>
+                </div>
+                <div class="phase-popup-body">
+                    <img src="src\Phase2-cholian.svg" alt="">
+                    <ul>
+                        <li>Mint V2s, V1 updates requests.</li>
+                        <li>Mini games, Network, Investors, Staking.</li>
+                        <li>Beta round Tech, work on collab mash ups.</li>
+                        <li>Implement tech where we can.</li>
+                        <li>Plan out subscriptions.</li>
+                        <li>Airdrops if possible.</li>
+                        <li>Reach out to key components.</li>
+                        <li>Find game designers, install links to purchase merch.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phase-popup3" id="phase-popup">
+                <div class="phase-popup-header">
+                    <div></div>
+                    <h2>phase 2</h2>
+                    <button class="cancel-button" onclick="hidePopup()">
+                        <img src="src\cancel icon.svg" alt="">
+                    </button>
+                </div>
+                <div class="phase-popup-body">
+                    <img src="src\Phase2-cholian.svg" alt="">
+                    <ul>
+                        <li>Mint V2s, V1 updates requests.</li>
+                        <li>Mini games, Network, Investors, Staking.</li>
+                        <li>Beta round Tech, work on collab mash ups.</li>
+                        <li>Implement tech where we can.</li>
+                        <li>Plan out subscriptions.</li>
+                        <li>Airdrops if possible.</li>
+                        <li>Reach out to key components.</li>
+                        <li>Find game designers, install links to purchase merch.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phase-popup4" id="phase-popup">
+                <div class="phase-popup-header">
+                    <div></div>
+                    <h2>phase 2</h2>
+                    <button class="cancel-button" onclick="hidePopup()">
+                        <img src="src\cancel icon.svg" alt="">
+                    </button>
+                </div>
+                <div class="phase-popup-body">
+                    <img src="src\Phase2-cholian.svg" alt="">
+                    <ul>
+                        <li>Mint V2s, V1 updates requests.</li>
+                        <li>Mini games, Network, Investors, Staking.</li>
+                        <li>Beta round Tech, work on collab mash ups.</li>
+                        <li>Implement tech where we can.</li>
+                        <li>Plan out subscriptions.</li>
+                        <li>Airdrops if possible.</li>
+                        <li>Reach out to key components.</li>
+                        <li>Find game designers, install links to purchase merch.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="phase-popup5" id="phase-popup">
+                <div class="phase-popup-header">
+                    <div></div>
+                    <h2>phase 2</h2>
+                    <button class="cancel-button" onclick="hidePopup()">
+                        <img src="src\cancel icon.svg" alt="">
+                    </button>
+                </div>
+                <div class="phase-popup-body">
+                    <img src="src\Phase2-cholian.svg" alt="">
+                    <ul>
+                        <li>Mint V2s, V1 updates requests.</li>
+                        <li>Mini games, Network, Investors, Staking.</li>
+                        <li>Beta round Tech, work on collab mash ups.</li>
+                        <li>Implement tech where we can.</li>
+                        <li>Plan out subscriptions.</li>
+                        <li>Airdrops if possible.</li>
+                        <li>Reach out to key components.</li>
+                        <li>Find game designers, install links to purchase merch.</li>
+                    </ul>
+                </div>
+            </div> -->
+            <span class="bg-popup" onclick="hidePopup1()"></span>
+        </div>
+        <div class="team">
+            <h1 id="team">team</h1>
+            <div class="team-embers">
+                <img src="src\cholian.svg" alt="">
+                <img src="src\cholian1.svg" alt="">
+                <img src="src\cholian2.svg" alt="">
+                <img src="src\cholian3.svg" alt="">
+                <img src="src\cholian4.svg" alt="">
+            </div>
+        </div>
+        <div class="faq">
+            <h1 id="faq">faqs</h1>
+            <div class="faq-list">
+                <div class="faq-block">
+                    <h3>What is $cholitos?</h3>
+                    <p>They are Cholions from Cholia: A very diverse planet in the verse. Cholians have been in the space observing. </p>
+                </div>
+                <div class="faq-block">
+                    <h3>What is $cholitos?</h3>
+                    <p>They are Cholions from Cholia: A very diverse planet in the verse. Cholians have been in the space observing. </p>
+                </div>
+                <div class="faq-block">
+                    <h3>What is $cholitos?</h3>
+                    <p>They are Cholions from Cholia: A very diverse planet in the verse. Cholians have been in the space observing. </p>
+                </div>
+                <div class="faq-block">
+                    <h3>What is $cholitos?</h3>
+                    <p>They are Cholions from Cholia: A very diverse planet in the verse. Cholians have been in the space observing. </p>
+                </div>
+                <div class="socials">
+                    <a href="" class="buy-button"><img src="src\proicons_x-twitter.svg" alt=""></a>
+                    <a href="" class="buy-button"><img src="src\bxl_telegram.svg" alt=""></a>
+                </div>
+            </div>
         </div>
     </main>
     <script src="index.js"></script>

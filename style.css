@@ -146,7 +146,9 @@ main .hero-section .hero-alien {
     width: 50vw;
     /* animation: floatUpDown 3s ease-in-out infinite; */
 }
-
+.moblie-cholian {
+    display: none;
+}
 /* Define the floating animation */
 
 @keyframes floatUpDown {
@@ -355,20 +357,30 @@ main .roadmap {
     height: 70rem;
     left: 0;
     margin-top: -44%;
+    transition: 0.5s ease;
 }
 @media screen and (max-width: 1430px) {
     main .roadmap {
         margin-top: -60%;
+        transition: 0.5s ease;
     }
 }
 @media screen and (max-width: 1280px) {
     main .roadmap {
         margin-top: -75%;
+        transition: 0.5s ease;
     }
 }
 @media screen and (max-width: 1140px) {
     main .roadmap {
         margin-top: -90%;
+        transition: 0.5s ease;
+    }
+}
+@media screen and (max-width: 945px) {
+    main .roadmap {
+        top: 2000%;
+        transition: 0.5s ease;
     }
 }
 main .roadmap h1 {
@@ -421,40 +433,52 @@ main .roadmap .phase-2 {
     background-color: #FB9805;
     left: 30%;
     top: 32%;
+    opacity: .5;
+    box-shadow: none;
+    cursor: default;
 }
 main .roadmap .phase-2:hover {
     background-color: #fcb447;
-    transform: translate(4px, 4px);
+    /* transform: translate(4px, 4px); */
     box-shadow: none;
 }
 main .roadmap .phase-3 {
     background-color: #0000FF;
     left: 47.5%;
     top: 48.5%;
+    opacity: .5;
+    box-shadow: none;
+    cursor: default;
 }
 main .roadmap .phase-3:hover {
     background-color: #3a3afb;
-    transform: translate(4px, 4px);
+    /* transform: translate(4px, 4px); */
     box-shadow: none;
 }
 main .roadmap .phase-4 {
     background-color: white;
     left: 66%;
     top: 30%;
+    opacity: .5;
+    box-shadow: none;
+    cursor: default;
 }
 main .roadmap .phase-4:hover {
     background-color: rgb(240, 240, 240);
-    transform: translate(4px, 4px);
+    /* transform: translate(4px, 4px); */
     box-shadow: none;
 }
 main .roadmap .phase-5 {
     background-color: #35B4DE;
     left: 84.5%;
     top: 50%;
+    opacity: .5;
+    box-shadow: none;
+    cursor: default;
 }
 main .roadmap .phase-5:hover {
     background-color: #0db6ee;
-    transform: translate(4px, 4px);
+    /* transform: translate(4px, 4px); */
     box-shadow: none;
 }
 @media screen and (max-width: 1490px) {
@@ -462,12 +486,12 @@ main .roadmap .phase-5:hover {
         transform: scale(0.8);
     }
     main .roadmap .phase-2 {
-        left: 26%;
-        top: 42%;
+        left: 30%;
+        top: 32%;
     }
     main .roadmap .phase-5 {
-        left: 82%;
-        top: 62%;
+        left: 84%;
+        top: 48%;
     }
 }
 
@@ -490,7 +514,7 @@ main .blur-bg {
 
 
 /* Popup container */
-main .blur-bg .phase-popup {
+main .blur-bg #phase-popup {
     width: 50%;
     max-width: 80%;
     overflow: hidden;
@@ -498,17 +522,32 @@ main .blur-bg .phase-popup {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #9A2FBE;
     border-radius: 30px;
     box-shadow: 1px 1px 100px rgba(0, 0, 0, 0.583);
     box-sizing: border-box;
     padding: 0rem 3rem 3rem 3rem;
     gap: 1rem;
     z-index: 20;
+    position: absolute;
+}
+main .blur-bg .phase-popup1 {
+    background-color: #9A2FBE;
+}
+main .blur-bg .phase-popup2 {
+    background-color: #FB9805;
+}
+main .blur-bg .phase-popup3 {
+    background-color: #0000FF;
+}
+main .blur-bg .phase-popup4 {
+    background-color: #ffffff;
+}
+main .blur-bg .phase-popup5 {
+    background-color: #35B4DE;
 }
 
 /* Header of the popup */
-main .blur-bg .phase-popup .phase-popup-header {
+main .blur-bg #phase-popup .phase-popup-header {
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -518,14 +557,14 @@ main .blur-bg .phase-popup .phase-popup-header {
     margin: 0;
     height: 10rem;
 }
-main .blur-bg .phase-popup .phase-popup-header h2 {
+main .blur-bg #phase-popup .phase-popup-header h2 {
     font-size: 5vw;
     font-weight: 100;
     color: #fff;
     /* margin-top: 10%; */
 }
 /* Cancel button in the header */
-main .blur-bg .phase-popup .phase-popup-header .cancel-button {
+main .blur-bg #phase-popup .phase-popup-header .cancel-button {
     background: none;
     cursor: pointer;
     outline: none;
@@ -540,17 +579,17 @@ main .blur-bg .phase-popup .phase-popup-header .cancel-button {
     border: .082rem solid white; 
     transition: .2s ease;
 }
-main .blur-bg .phase-popup .phase-popup-header .cancel-button:hover {
+main .blur-bg #phase-popup .phase-popup-header .cancel-button:hover {
     box-shadow: none;
     transform: translate(2px, 2px);
 }
-main .blur-bg .phase-popup .phase-popup-header .cancel-button img {
+main .blur-bg #phase-popup .phase-popup-header .cancel-button img {
     width: 10rem;
     pointer-events: none;
 }
 
 /* Popup body */
-main .blur-bg .phase-popup .phase-popup-body {
+main .blur-bg #phase-popup .phase-popup-body {
     padding-right: 0.5rem;
     padding-left: 0rem;
     text-align: center;
@@ -561,12 +600,12 @@ main .blur-bg .phase-popup .phase-popup-body {
     gap: 2%;
 }
 
-main .blur-bg .phase-popup .phase-popup-body img {
+main .blur-bg #phase-popup .phase-popup-body img {
     width: 40%;
     height: auto;
 }
 
-main .blur-bg .phase-popup .phase-popup-body ul {
+main .blur-bg #phase-popup .phase-popup-body ul {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -574,7 +613,7 @@ main .blur-bg .phase-popup .phase-popup-body ul {
     width: 60%;
     gap: .2rem;
 }
-main .blur-bg .phase-popup .phase-popup-body ul li {
+main .blur-bg #phase-popup .phase-popup-body ul li {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1.3vw;
@@ -643,3 +682,263 @@ main .blur-bg .phase-popup .phase-popup-body img {
     margin-bottom: 0;
     width: 30vw;
 } */
+main .buy-token {
+    position: relative;
+    height: auto;
+    padding: 1rem 9rem;
+    left: 0;
+    margin-top: -10%;
+    z-index: 20;
+}
+main .buy-token .buycholitos-background {
+    translate: none;
+    rotate: none;
+    scale: none;
+    transform: translate(0px, 0px);
+    position: absolute;
+    right: 0;
+    object-fit: cover;
+    width: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+main .buy-token h1 {
+    /* top: -88rem; */
+    top: 7%;
+    text-shadow: 0.3rem 0.3rem black;
+    color: #0db6ee;
+}
+main .buy-token .buy-image {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    margin: auto;
+}
+main .buy-token .buy-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 18%;
+    /* max-width: 100%; */
+}
+/* @meda (max-width: 480px) {
+    main .buy-token .buy-image img {
+        width: 90%;
+        margin: 0 auto;
+    }
+} */
+
+main .team {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    left: 0;
+    background-color: #E8D040;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    padding-top: 5%;
+    /* display: flex;
+    justify-content: center;
+    margin: auto; */
+}
+main .team #team {
+    text-shadow: 0.3rem 0.3rem black;
+    color: white;
+}
+main .team .team-embers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9rem;
+}
+main .team .team-embers img {
+    width: 15vw;
+}
+main .faq {
+    position: relative;
+    height: auto;
+    background-color: #9A2FBE;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 9rem 5vw 9rem;
+    width: 100%;
+}
+main .faq #faq {
+    text-shadow: 0.3rem 0.3rem black;
+    color: white;
+    transform: translateX(-15vw);
+}
+main .faq .faq-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    margin-top: 12vw;
+    width: 100%;
+    left: 0;
+    transform: translateX(-10%);
+    padding: 0rem 9rem;
+}
+main .faq .faq-list .faq-block {
+    background-color: #b7fcb12e;
+    width: 100%;
+    margin: 2vw;
+    height: auto;
+    border-radius: 20px;
+    color: white;
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+main .faq .faq-list .faq-block h3,
+main .faq .faq-list .faq-block p {
+    position: relative;
+    left: 3vw;
+}
+main .faq .faq-list .faq-block h3 {
+    font-size: 2vw;
+    font-weight: 100;
+    letter-spacing: 0.1vw;
+}
+ .faq-list .faq-block p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+main .faq .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 3vw;
+}
+main .faq .socials a {
+    border-radius: 100%;
+    background: #B7FCB1;
+    box-shadow: 4px 4px #ffffff;
+    display: flex;
+    height: 3vw;
+    width: 3vw;
+    padding: 3.6392rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.9375remrem;
+    border: .082rem solid #9A2FBE; 
+    transition: .35s ease;
+    background-size: cover;
+}
+main .faq .socials a:hover {
+    box-shadow: none;
+    background-color: #65fc57;
+    transform: translate(2px, 2px);
+}
+
+
+@media screen and (max-width: 1040px) {
+    main .hero-section .hero-alien {
+        position: absolute;
+        right: -2rem;
+        bottom: 10vw;
+        width: 60vw;
+    }
+    main .hero-section .hero-content {
+        position: absolute;
+        left: 9rem;
+        top: 10%;
+        justify-content: space-between;
+        display: flex;
+        gap: 20vw;
+        width: 100%;
+        transition: 25s ease;
+        /* display: flex;
+        justify-content: flex-end;
+        flex-direction: column; */
+    }
+    main .about-us {
+       margin-top: -200px;
+    }
+    main .tokenomics .pie-chart img {
+       transform: scale(1.5);
+    }
+    main .roadmap {
+        margin-top: -105%;
+        transition: 0.5s ease;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        padding: .3rem 2rem;
+    }
+    header .logo img {
+        width: 30%;
+        height: auto;
+    }
+    header .nav-list ul {
+        font-size: 4.1466vw;
+        font-weight: 400;
+    }
+    header .nav-list ul li {
+        padding: 0;
+    }
+    header .nav-list ul .buy-button {
+        display: none;
+    }
+    main .hero-section {
+        padding-left: 2rem;
+        margin-top: -6%;
+    }
+    main .hero-section .ellipse {
+        transform: translate(-10%, 40%);
+        width: 100vw;
+    }
+    main .hero-section .hero-alien {
+        margin: auto;
+        bottom: 20%;
+    }
+    main .hero-section .alien-spaceship {
+        left: 1rem;
+        margin-top: 30%;
+        width: 40vw;
+    }
+    main .hero-section .hero-content {
+        left: 2rem;
+        top: 15%;
+    }
+    main .hero-section .hero-content h1 {
+        font-size: 16px;
+    }
+    main .hero-section .hero-content h1 span:first-of-type {
+        font-size: 20px;
+    }
+    main .hero-section .hero-content h1 span:nth-of-type(2) {
+        font-size: 20px;
+    }
+    main .hero-section .hero-content h6 {
+        font-size: 100px;
+        top: -38vw;
+    }
+    main .hero-section .hero-content p {
+        font-size: 16px;
+        width: 60%;
+        top: 27vw;
+    }
+    main .hero-section .hero-content a {
+        border-radius: 10px;
+        height: 50px;
+        top: 580%;
+        font-size: 20px;
+    }
+    main .hero-section .moblie-cholian {
+        margin: auto;
+        bottom: 20%;
+    }
+}

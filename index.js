@@ -41,13 +41,35 @@ function myFunction() {
 //pop-up effect for phases
 
 const popupBg = document.querySelector('main .blur-bg');
+const phasePopup1 = document.querySelector("main .blur-bg .phase-popup1");
+const phasePopup2 = document.querySelector("main .blur-bg .phase-popup2");
+const phasePopup3 = document.querySelector("main .blur-bg .phase-popup3");
+const phasePopup4 = document.querySelector("main .blur-bg .phase-popup4");
+const phasePopup5 = document.querySelector("main .blur-bg .phase-popup5");
+
 
 // Function to show the popup
-function showPopup() {
-    popupBg.style.visibility = 'visible'
+function showPopup1() {
+    popupBg.style.visibility = 'visible';
+    // phasePopup1.style.visibility = 'visible';
+    // phasePopup2.style.visibility = 'hidden';
+    // phasePopup3.style.visibility = 'hidden';
+    // phasePopup4.style.visibility = 'hidden';
+    // phasePopup5.style.visibility = 'hidden';
 }
+// function showPopup2() {
+//     popupBg.style.visibility = 'visible';
+//     phasePopup1.style.visibility = 'hidden';
+//     phasePopup2.style.visibility = 'visible';
+//     phasePopup3.style.visibility = 'hidden';
+//     phasePopup4.style.visibility = 'hidden';
+//     phasePopup5.style.visibility = 'hidden';
+// }
 
 // Function to hide the popup
+function hidePopup1() {
+    popupBg.style.visibility = 'hidden'
+}
 function hidePopup() {
     popupBg.style.visibility = 'hidden'
 }
