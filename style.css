@@ -894,9 +894,8 @@ main .faq .socials a:hover {
     }
     main {
         position: relative;
-        width: 100%;
-
-        transform: translateY(0);
+        width: 100vw;
+        overflow: hidden;
         height: auto;
     }
     main .hero-section {
