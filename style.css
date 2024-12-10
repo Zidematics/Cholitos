@@ -894,7 +894,7 @@ main .faq .socials a:hover {
     }
     main {
         position: relative;
-        width: 100vw;
+        width: 100%;
         overflow: hidden;
         height: auto;
     }
