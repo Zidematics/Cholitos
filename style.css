@@ -1032,6 +1032,23 @@ main .faq .socials a:hover {
         font-weight: bold;
         color: yellow; /* Highlighted text color */
       }
+    main .tokenomics {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        height: 100vh; /* Full viewport height */
+        background-image: url('src/orange background.svg'); /* Set the first image as background */
+        background-size: cover; /* Ensure the background covers the entire div */
+        background-position: center; /* Center the background image */
+        text-align: center; /* Center text inside the div */
+        padding: 2rem; /* Padding around the container */
+        position: relative; /* Ensure the pie chart and other elements are positioned on top of the background */
+        box-sizing: border-box; /* Ensure padding is included within the element’s total width/height */
+    }
+    main .tokenomics .tokenomics-background {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
