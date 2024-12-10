@@ -151,20 +151,17 @@ main .hero-section .hero-alien {
 }
 /* Define the floating animation */
 
-@keyframes floatUpDown {
+/* @keyframes floatUpDown {
     0% {
-        /* transform: translateY(-1rem);  */
         top: -10rem;
     }
     50% {
-        /* transform: translateY(-10rem);  */
         top: -9rem;
     }
     100% { 
-        /* transform: translateY(-1rem); */
         top: -10rem;
     }
-}
+} */
 main .hero-section .alien-spaceship {
     position: absolute;
     left: 7rem;
@@ -928,7 +925,7 @@ main .faq .socials a:hover {
         gap: 0px;
         flex-direction: column;
         left: 0;
-        margin-top: 0%;
+        margin-top: -50%;
         padding-right: 2rem;
     }
     main .hero-section .hero-content h1 {
