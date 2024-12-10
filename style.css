@@ -928,7 +928,7 @@ main .faq .socials a:hover {
         gap: 0px;
         flex-direction: column;
         left: 0;
-        top: -35%;
+        margin-top: -50%;
         padding-right: 2rem;
     }
     main .hero-section .hero-content h1 {
