@@ -919,8 +919,9 @@ main .faq .socials a:hover {
     }
     main .hero-section .hero-alien {
         margin: auto;
-        bottom: 20%;
-        right: -2rem;
+        bottom: 35%;
+        right: 0rem
+        transform: scale(1.2);
     }
     main .hero-section .alien-spaceship {
         left: -9rem;
