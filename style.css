@@ -902,6 +902,7 @@ main .faq .socials a:hover {
         top: 0;
         left: 0;
         padding-left: 2rem;
+        padding-right: 2rem;
         width: 100%;
     }
     main .hero-section .hero-background {
@@ -923,12 +924,16 @@ main .faq .socials a:hover {
     main .hero-section .hero-content {
         position: relative;
         display: flex;
-        gap: 10px;
-        top: 15%;
+        justify-content: flex-start;
+        gap: 0px;
+        flex-direction: column;
         left: 0;
+        top: -35%;
+        padding-right: 2rem;
     }
     main .hero-section .hero-content h1 {
         font-size: 1rem;
+        position: static;
     }
     main .hero-section .hero-content h1 span:first-of-type {
         font-size: 1.5rem;
@@ -938,18 +943,20 @@ main .faq .socials a:hover {
     }
     main .hero-section .hero-content h6 {
         font-size: 6.25rem;
-        margin-top: 35vw;
         text-shadow: 0.3rem 0.3rem #9A2FBE;
+        position: static;
+        margin: 0;
     }
     main .hero-section .hero-content p {
         font-size: 1rem;
-        margin-top: 15vw;
+        position: static;
     }
     main .hero-section .hero-content a {
         border-radius: 10px;
         height: 50px;
-        top: 580%;
         font-size: 20px;
+        position: static;
+        width: 50vw;
     }
     main .hero-section .moblie-cholian {
         margin: auto;
