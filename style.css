@@ -919,14 +919,14 @@ main .faq .socials a:hover {
         width: 70vw;
     }
     main .hero-section .hero-content {
-        position: relative;
+        position: absolute;
         display: flex;
         justify-content: flex-start;
         gap: 0px;
         flex-direction: column;
         left: 0;
-        top: -50px;
-        padding-right: 2rem;
+        padding-left: 2rem;
+        top: -200px;
     }
     main .hero-section .hero-content h1 {
         font-size: 1rem;
