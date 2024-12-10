@@ -872,9 +872,13 @@ main .faq .socials a:hover {
 }
 
 @media (max-width: 576px) {
+    body {
+        background-color: #9A2FBE;
+    }
     header {
         padding: .3rem 2rem;
-        background-color: #9A2FBE;
+        background-color: #9a2fbe63;
+        backdrop-filter: blur(200px);
     }
     header .logo img {
         width: 30%;
@@ -934,14 +938,14 @@ main .faq .socials a:hover {
         top: -300px;
     }
     main .hero-section .hero-content h1 {
-        font-size: 1rem;
+        font-size: 0.8rem;
         position: static;
     }
     main .hero-section .hero-content h1 span:first-of-type {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     main .hero-section .hero-content h1 span:nth-of-type(2) {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     main .hero-section .hero-content h6 {
         font-size: 5.25rem;
@@ -950,8 +954,9 @@ main .faq .socials a:hover {
         margin: 0;
     }
     main .hero-section .hero-content p {
-        font-size: 1rem;
+        font-size: .8rem;
         position: static;
+        width: 400px;
     }
     main .hero-section .hero-content a {
         border-radius: 10px;
