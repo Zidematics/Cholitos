@@ -899,14 +899,16 @@ main .faq .socials a:hover {
         position: relative;
     }
     main .hero-section {
-        position: relative;
-        padding-left: 2rem;
         top: 0;
         left: 0;
-        height: 100vh;
+        padding-left: 2rem;
+        width: 100%;
+    }
+    main .hero-section .hero-background {
+        margin-top: 0;
     }
     main .hero-section .ellipse {
-        transform: translate(-10%, 40%);
+        transform: translate(0%, 0%);
         width: 100vw;
     }
     main .hero-section .hero-alien {
@@ -914,31 +916,34 @@ main .faq .socials a:hover {
         bottom: 20%;
     }
     main .hero-section .alien-spaceship {
-        left: 1rem;
-        margin-top: 30%;
-        width: 40vw;
+        left: -9rem;
+        margin-top: 20%;
+        width: 70vw;
     }
     main .hero-section .hero-content {
-        left: 2rem;
+        position: relative;
+        display: flex;
+        gap: 10px;
         top: 15%;
+        left: 0;
     }
     main .hero-section .hero-content h1 {
-        font-size: 16px;
+        font-size: 1rem;
     }
     main .hero-section .hero-content h1 span:first-of-type {
-        font-size: 20px;
+        font-size: 1.5rem;
     }
     main .hero-section .hero-content h1 span:nth-of-type(2) {
-        font-size: 20px;
+        font-size: 1.5rem;
     }
     main .hero-section .hero-content h6 {
-        font-size: 100px;
-        top: -38vw;
+        font-size: 6.25rem;
+        margin-top: 35vw;
+        text-shadow: 0.3rem 0.3rem #9A2FBE;
     }
     main .hero-section .hero-content p {
-        font-size: 16px;
-        width: 60%;
-        top: 27vw;
+        font-size: 1rem;
+        margin-top: 15vw;
     }
     main .hero-section .hero-content a {
         border-radius: 10px;
