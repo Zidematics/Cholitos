@@ -962,7 +962,7 @@ main .faq .socials a:hover {
         margin: 0;
     }
     main .hero-section .hero-content p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         position: static;
         width: 320px;
     }
@@ -993,13 +993,14 @@ main .faq .socials a:hover {
         background-size: cover;
         height: auto;
     }
-    main .about-us h1 {
+    main .about-us .about-header {
         text-shadow: 0.15rem 0.15rem #9A2FBE;
         font-size: 2rem; /* Adjust header size for mobile */
         font-weight: bold;
         margin-bottom: 1.5rem; /* Add space below the header */
         z-index: 1; 
-        text-align: center;/* Ensure it sits above the background */
+        text-align: center;
+        transform: translateX(50%);/* Ensure it sits above the background */
     }
     main .about-us .aboutus-background {
         scale: 1.5;
