@@ -1112,8 +1112,8 @@ main .faq .socials a:hover {
         height: auto;
     }
     main .roadmap span {
-        width: 15vw;
-        height: 15vw;
+        width: 12vw;
+        height: 12vw;
     }
     main .roadmap span img:first-of-type {
         position: absolute;
@@ -1122,7 +1122,7 @@ main .faq .socials a:hover {
     }
     main .roadmap .phase-1 {
         left: 4%;
-        top: 29%;
+        top: 74vw;
     }
     main .roadmap .phase-1:hover {
         transform: translate(2px, 2px);
