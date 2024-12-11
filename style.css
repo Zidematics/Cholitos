@@ -1224,6 +1224,48 @@ main .faq .socials a:hover {
         height: auto; /* Maintain the aspect ratio */
         border-radius: 0px;
     }
+    main .faq {
+        z-index: 100;
+        display: flex;
+        flex-direction: column;  /* Center horizontally */
+        justify-content: center;
+        align-items: center; /* Center text inside the container */
+        position: relative; /* For background positioning */
+        padding: 0rem 2rem; /* Ensure padding around the container */
+        min-height: 100vh; 
+        overflow: hidden; 
+        height: auto;
+        z-index: 1000;
+        left: 0;
+    }
+    main .faq #faq {
+        text-shadow: 0.15rem 0.15rem #000000;
+        color: white;
+        font-size: 2rem; /* Adjust header size for mobile */
+        font-weight: bold;
+        margin-bottom: 1.5rem; /* Add space below the header */
+        z-index: 1; 
+        top: 0rem;
+        transform: translateX(50%);
+    }
+    main .faq .faq-list {
+        padding: 0rem 2rem;
+        width: 100%;
+    }
+    main .faq .faq-list .faq-block {
+        margin: 1vw;
+        border-radius: 10px;
+        padding: 0 2px;
+        align-items: center;
+    }
+    main .faq .faq-list .faq-block h3 {
+        font-size: 5vw;
+    }
+    main .faq .socials a {
+        width: 1.5vw;
+        height: 1.5vw;
+        margin-top: 10%;
+    }
 }
 
 @media (max-width: 480px) {
