@@ -1107,13 +1107,13 @@ main .faq .socials a:hover {
     }
     main .roadmap .mobile-roadmap {
         display: block;
-        margin-top: 220px;
+        margin-top: 40vw;
         width: 100%;
         height: auto;
     }
     main .roadmap span {
-        width: 12vw;
-        height: 12vw;
+        width: 10vw;
+        height: 10vw;
     }
     main .roadmap span img:first-of-type {
         position: absolute;
@@ -1122,7 +1122,7 @@ main .faq .socials a:hover {
     }
     main .roadmap .phase-1 {
         left: 4%;
-        margin-top: -230px;
+        top: 29%;
     }
     main .roadmap .phase-1:hover {
         transform: translate(2px, 2px);
