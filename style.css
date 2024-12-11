@@ -1050,7 +1050,7 @@ main .faq .socials a:hover {
         flex-direction: column; /* Stack elements vertically */
         align-items: center; /* Center horizontally */
         justify-content: center; /* Center vertically */
-        height: 1500px; /* Full viewport height */
+        height: 240vw; /* Full viewport height */
         background-image: url('src/orange background.svg'); /* Set the first image as background */
         background-size: cover; /* Ensure the background covers the entire div */
         background-position: center; /* Center the background image */
