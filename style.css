@@ -1193,7 +1193,7 @@ main .faq .socials a:hover {
         /* Use the first image as the background */
         overflow: hidden; /* Prevent content from spilling out */
         background-size: cover;
-        height: 160vh;
+        height: 140vh;
     }
     main .team #team {
         text-shadow: 0.15rem 0.15rem #9A2FBE; /* Adjust header size for mobile */
@@ -1214,7 +1214,7 @@ main .faq .socials a:hover {
         width: 100%;
         position: relative;
         margin-left: -14%;
-        bottom: 0;
+        top: 0;
     }
     
     /* Styling for team member images */
