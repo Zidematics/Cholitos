@@ -1154,7 +1154,7 @@ main .faq .socials a:hover {
         text-align: center; /* Center text inside the container */
         position: relative; /* For background positioning */
         padding: 6rem 2rem; /* Ensure padding around the container */
-        min-height: 500px; /* Full viewport height */
+        height: 500px; /* Full viewport height */
         background: url("src/white\ bg.svg") no-repeat center center / cover;
         /* Use the first image as the background */
         overflow: visible; /* Prevent content from spilling out */
@@ -1177,8 +1177,23 @@ main .faq .socials a:hover {
         left: -10%;
         height: auto;
         display: block;
-        margin-bottom: -200px;
         /* max-width: 100%; */
+    }
+    main .team {
+        z-index: 0;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        text-align: center; /* Center text inside the container */
+        position: relative; /* For background positioning */
+        padding: 6rem 2rem; /* Ensure padding around the container */
+        min-height: 100vh; /* Full viewport height */
+        background-color: url("src/purple background.svg") no-repeat center center / cover;
+        /* Use the first image as the background */
+        overflow: hidden; /* Prevent content from spilling out */
+        background-size: cover;
+        height: auto;
     }
 }
 
