@@ -1266,6 +1266,10 @@ main .faq .socials a:hover {
         height: 1.5vw;
         margin-top: 10%;
     }
+    .faq-list .faq-block p {
+        font-size: 0.9rem; /* Reduce text size for mobile */
+        line-height: 1.5;
+    }
 }
 
 @media (max-width: 480px) {
