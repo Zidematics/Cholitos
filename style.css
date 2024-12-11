@@ -1211,15 +1211,15 @@ main .faq .socials a:hover {
         gap: 2rem; /* Add spacing between images */
         align-items: center;
         justify-items: center;
-        width: 80%;
+        width: 100%;
         position: static;
-        transform: translate(0%, 0%);
+        left: 0;
     }
     
     /* Styling for team member images */
     main .team .team-embers img {
         width: 100%; /* Each image takes 50% of the container width, minus 2rem for spacing */
-        max-width: 400rem; /* Ensure the image doesn't exceed the parent width */
+        max-width: 200rem; /* Ensure the image doesn't exceed the parent width */
         height: auto; /* Maintain the aspect ratio */
         border-radius: 0px;
     }
