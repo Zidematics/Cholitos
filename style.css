@@ -1231,7 +1231,7 @@ main .faq .socials a:hover {
         justify-content: center;
         align-items: center; /* Center text inside the container */
         position: relative; /* For background positioning */
-        padding: 0rem 2rem; /* Ensure padding around the container */
+        padding: 4rem 2rem; /* Ensure padding around the container */
         min-height: 100vh; 
         overflow: hidden; 
         height: auto;
@@ -1241,16 +1241,17 @@ main .faq .socials a:hover {
     main .faq #faq {
         text-shadow: 0.15rem 0.15rem #000000;
         color: white;
-        font-size: 2rem; /* Adjust header size for mobile */
+        font-size: 3rem; /* Adjust header size for mobile */
         font-weight: bold;
         margin-bottom: 1.5rem; /* Add space below the header */
         z-index: 1; 
         top: 0rem;
-        transform: translateX(50%);
+        transform: translateX(-50%);
+        position: static;
     }
     main .faq .faq-list {
         padding: 0rem 2rem;
-        width: 100%;
+        width: 90%;
     }
     main .faq .faq-list .faq-block {
         margin: 1vw;
