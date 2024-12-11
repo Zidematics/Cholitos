@@ -1120,7 +1120,7 @@ main .faq .socials a:hover {
     }
     main .roadmap span img:first-of-type {
         scale: 0.7;
-        transform: translateY(120%);
+        margin-top: 30px;
     }
     main .roadmap .phase-1 {
         left: 4%;
