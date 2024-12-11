@@ -1188,12 +1188,12 @@ main .faq .socials a:hover {
         justify-content: center; /* Center vertically */
         text-align: center; /* Center text inside the container */
         position: relative; /* For background positioning */
-        padding: 6rem 2rem; /* Ensure padding around the container */
+        padding: 6rem 2rem 0rem 2rem; /* Ensure padding around the container */
         min-height: 100vh; /* Full viewport height */
         /* Use the first image as the background */
         overflow: hidden; /* Prevent content from spilling out */
         background-size: cover;
-        height: 200vh;
+        height: 160vh;
     }
     main .team #team {
         text-shadow: 0.15rem 0.15rem #9A2FBE; /* Adjust header size for mobile */
@@ -1201,25 +1201,26 @@ main .faq .socials a:hover {
         margin-bottom: 1.5rem; /* Add space below the header */
         z-index: 1; 
         text-align: center;
-        top: 6rem;
-        left: 46%;
+        top: 4rem;
+        left: 45%;
         position: absolute;
     }
     main .team .team-embers {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 images per row */
-        gap: 2rem; /* Add spacing between images */
-        align-items: flex-end;
+        gap: 0rem; /* Add spacing between images */
+        align-items: baseline;
         justify-items: center;
         width: 100%;
-        position: static;
-        left: 0;
+        position: relative;
+        margin-left: -14%;
+        bottom: 0;
     }
     
     /* Styling for team member images */
     main .team .team-embers img {
-        width: 100%; /* Each image takes 50% of the container width, minus 2rem for spacing */
-        max-width: 200rem; /* Ensure the image doesn't exceed the parent width */
+        width: 80%; /* Each image takes 50% of the container width, minus 2rem for spacing */
+        max-width: 100rem; /* Ensure the image doesn't exceed the parent width */
         height: auto; /* Maintain the aspect ratio */
         border-radius: 0px;
     }
