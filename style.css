@@ -883,6 +883,7 @@ main .faq .socials a:hover {
         background-color: #9A2FBE;
     }
     header {
+        z-index: 2000;
         padding: .3rem 2rem;
         background-color: #9a2fbe63;
         backdrop-filter: blur(200px);
