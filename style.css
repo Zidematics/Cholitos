@@ -1215,8 +1215,7 @@ main .faq .socials a:hover {
     main .team .team-embers img {
         margin-bottom: 50px;
         height: auto;
-        width: 100%;
-        width: 100%;
+        width: 100vw;
         max-width: 500px;
     }
 }
