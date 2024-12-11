@@ -1145,6 +1145,41 @@ main .faq .socials a:hover {
         left: 35.5%;
         top: 73%;
     }
+    main .buy-token {
+        z-index: 100;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        text-align: center; /* Center text inside the container */
+        position: relative; /* For background positioning */
+        padding: 6rem 2rem; /* Ensure padding around the container */
+        min-height: 500px; /* Full viewport height */
+        background: url("src/white\ bg.svg") no-repeat center center / cover;
+        /* Use the first image as the background */
+        overflow: visible; /* Prevent content from spilling out */
+        background-size: cover;
+    }
+    main .buy-token h1 {
+        margin-top: 16%;
+        text-shadow: 0.3rem 0.3rem black;
+        color: #0db6ee;
+    }
+    main .buy-token .buycholitos-background {
+        display: none;
+    }
+    main .buy-token h1 {
+        margin-bottom: 1rem; 
+        text-shadow: 0.15rem 0.15rem #000000;
+    }
+    main .buy-token .buy-image img {
+        width: 120vw;
+        left: -10%;
+        height: auto;
+        display: block;
+        margin-bottom: -200px;
+        /* max-width: 100%; */
+    }
 }
 
 @media (max-width: 480px) {
