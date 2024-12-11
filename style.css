@@ -1186,13 +1186,9 @@ main .faq .socials a:hover {
         justify-content: center; /* Center vertically */
         text-align: center; /* Center text inside the container */
         position: relative; /* For background positioning */
-        padding: 6rem 2rem; /* Ensure padding around the container */
-        min-height: auto; /* Full viewport height */
-        /* Use the first image as the background */
-        overflow: hidden; /* Prevent content from spilling out */
-        background-size: cover;
-        height: auto;
-        width: 100%;
+        padding: 6rem 0rem;
+        max-width: 686px; /* Restrict the max width to 576px */
+        margin: 0 auto;/* Add 2rem padding to the container */
     }
     main .team #team {
         text-shadow: 0.15rem 0.15rem #9A2FBE; /* Adjust header size for mobile */
@@ -1200,23 +1196,24 @@ main .faq .socials a:hover {
         margin-top: 0; /* Add space below the header */
         z-index: 1; 
         text-align: center;
-        top: 5%;
+        top: 10%;
         left: 50%;
         position: absolute;
     }
     main .team .team-embers {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Stack image and text */
-        align-items: center; /* Center align the content */
-        margin: 5rem 0; /* Space between sections */
-        z-index: 1; /* Ensure it sits above the background */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+        gap: 1rem; /* Add spacing between images */
+        align-items: center;
+        justify-items: center;
     }
+    
+    /* Styling for team member images */
     main .team .team-embers img {
-        margin-bottom: 50px;
-        height: auto;
-        width: 100vw;
-        max-width: 500px;
+        width: calc(200% - 2rem); /* Each image takes 50% of the container width, minus 2rem for spacing */
+        max-width: 100%; /* Ensure the image doesn't exceed the parent width */
+        height: auto; /* Maintain the aspect ratio */
+        border-radius: 8px;
     }
 }
 
