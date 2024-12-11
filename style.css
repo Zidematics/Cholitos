@@ -1186,8 +1186,7 @@ main .faq .socials a:hover {
         justify-content: center; /* Center vertically */
         text-align: center; /* Center text inside the container */
         position: relative; /* For background positioning */
-        padding: 6rem 0rem;
-        max-width: 686px; /* Restrict the max width to 576px */
+        padding: 6rem 0rem; /* Restrict the max width to 576px */
         margin: 0 auto;/* Add 2rem padding to the container */
     }
     main .team #team {
@@ -1203,17 +1202,19 @@ main .faq .socials a:hover {
     main .team .team-embers {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 images per row */
-        gap: 1rem; /* Add spacing between images */
+        gap: 2rem; /* Add spacing between images */
         align-items: center;
         justify-items: center;
+        width: 100%;
+        position: static;
     }
     
     /* Styling for team member images */
     main .team .team-embers img {
-        width: calc(200% - 2rem); /* Each image takes 50% of the container width, minus 2rem for spacing */
-        max-width: 100%; /* Ensure the image doesn't exceed the parent width */
+        width: 100%; /* Each image takes 50% of the container width, minus 2rem for spacing */
+        max-width: 400rem; /* Ensure the image doesn't exceed the parent width */
         height: auto; /* Maintain the aspect ratio */
-        border-radius: 8px;
+        border-radius: 0px;
     }
 }
 
