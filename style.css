@@ -1193,23 +1193,23 @@ main .faq .socials a:hover {
         /* Use the first image as the background */
         overflow: hidden; /* Prevent content from spilling out */
         background-size: cover;
-        height: auto;
+        height: 200vh;
     }
     main .team #team {
         text-shadow: 0.15rem 0.15rem #9A2FBE; /* Adjust header size for mobile */
         font-weight: bold;
-        margin-top: 0; /* Add space below the header */
+        margin-bottom: 1.5rem; /* Add space below the header */
         z-index: 1; 
         text-align: center;
-        top: 2%;
-        left: 50%;
+        top: 6rem;
+        left: 46%;
         position: absolute;
     }
     main .team .team-embers {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* 2 images per row */
         gap: 2rem; /* Add spacing between images */
-        align-items: center;
+        align-items: flex-end;
         justify-items: center;
         width: 100%;
         position: static;
