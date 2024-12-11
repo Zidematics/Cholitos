@@ -308,6 +308,7 @@ main .about-us p span {
 }
 main .about-us #aboutus-2 {
     top: -5%;
+    flex-direction: row-reverse;
 }
 main .tokenomics {
     position: relative;
@@ -346,6 +347,9 @@ main .tokenomics .pie-chart {
 main .tokenomics .pie-chart img {
     width: 80%;
     min-width: 90%;
+}
+main .tokenomics .pie-chart #mobile-pizza {
+    display: none;
 }
 main .roadmap {
     position: relative;
@@ -394,6 +398,9 @@ main .roadmap img {
     height: 100%;
     scale: 1.1;
     pointer-events: none;
+}
+main .roadmap .mobile-roadmap {
+    display: none;
 }
 main .roadmap span {
     cursor: pointer;
@@ -1016,6 +1023,9 @@ main .faq .socials a:hover {
         margin: 0rem 0; /* Space between sections */
         z-index: 1; /* Ensure it sits above the background */
     }
+    main .about-us #aboutus-2 {
+        flex-direction: column;
+    }
     main .about-us .aboutus-1 img,
     main .about-us .aboutus-2 img {
         width: 100%; /* Image spans across the full width */
@@ -1040,7 +1050,7 @@ main .faq .socials a:hover {
         flex-direction: column; /* Stack elements vertically */
         align-items: center; /* Center horizontally */
         justify-content: center; /* Center vertically */
-        height: 100vh; /* Full viewport height */
+        height: 80rem; /* Full viewport height */
         background-image: url('src/orange background.svg'); /* Set the first image as background */
         background-size: cover; /* Ensure the background covers the entire div */
         background-position: center; /* Center the background image */
@@ -1056,16 +1066,75 @@ main .faq .socials a:hover {
         z-index: 1; /* Ensure the heading appears above the background */
         margin-bottom: 1rem; /* Add space between heading and pie chart */
     }
-    main .pie-chart {
+    main .tokenomics .pie-chart {
         position: static;
         width: 100%;
-        margin-top: 1rem; /* Space between the heading and pie chart */
+        margin-top: 8rem; /* Space between the heading and pie chart */
         z-index: 1; /* Ensure the pie chart appears above the background */
     }
-    main .pie-chart img {
-        width: 90%; /* Adjust size for mobile (responsive) */
-        max-width: 250px; /* Limit max width of the image */
-        height: auto; /* Maintain aspect ratio */
+    main .tokenomics .pie-chart #mobile-pizza {
+        transform: scale(1.1); /* Maintain the aspect ratio */
+        display: block; /* Ensure proper layout handling */
+        margin: 0 auto;
+        margin-top: 4;
+    }
+    #pieChartImage {
+        display: none;
+    }
+    main .roadmap {
+        margin-top: 0%;
+        z-index: 100;
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        height: 110vh; /* Full viewport height */
+        background-color: #B7FCB1; /* Set the first image as background */
+        background-size: cover; /* Ensure the background covers the entire div */
+        background-position: center; /* Center the background image */
+        text-align: center; /* Center text inside the div */
+        padding: 9rem 2rem; /* Padding around the container */
+        position: relative; /* Ensure the pie chart and other elements are positioned on top of the background */
+        box-sizing: cover; /* Ensure padding is included within the element’s total width/height */
+    }
+    main .roadmap .desktop-roadmap {
+        display: none;
+    }
+    main .roadmap .mobile-roadmap {
+        display: block;
+        margin-top: 30%;
+    }
+    main .roadmap span {
+        width: 60px;
+        height: 60px;
+    }
+    main .roadmap span img:first-of-type {
+        position: absolute;
+        scale: 0.7;
+        margin-top: 20%;
+    }
+    main .roadmap .phase-1 {
+        left: 9%;
+        top: 29%;
+    }
+    main .roadmap .phase-1:hover {
+        transform: translate(2px, 2px);
+    }
+    main .roadmap .phase-2 {
+        left: 40.5%;
+        top: 22%;
+    }
+    main .roadmap .phase-3 {
+        left: 69%;
+        top: 30%;
+    }
+    main .roadmap .phase-4 {
+        left: 7.5%;
+        top: 60.5%;
+    }
+    main .roadmap .phase-5 {
+        left: 37.5%;
+        top: 70%;
     }
 }
 
