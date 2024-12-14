@@ -785,7 +785,7 @@ main .faq .faq-list {
     position: relative;
     margin: auto;
     margin-top: 12vw;
-    width: 100%;
+    width: 80%;
     left: 0;
     transform: translateX(-10%);
     padding: 0rem 9rem;
