@@ -770,7 +770,7 @@ main .faq {
     background-color: #9A2FBE;
     display: flex;
     justify-content: center;
-    padding: 3rem 9rem 5vw 9rem;
+    padding: 3rem 10rem 5vw 10rem;
     width: 100%;
 }
 main .faq #faq {
@@ -782,6 +782,7 @@ main .faq .faq-list {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     position: relative;
     margin: auto;
     margin-top: 12vw;
@@ -793,7 +794,7 @@ main .faq .faq-list {
 main .faq .faq-list .faq-block {
     background-color: #b7fcb12e;
     width: 100%;
-    margin: 2vw;
+    margin: 1vw;
     height: auto;
     border-radius: 20px;
     color: white;
@@ -801,16 +802,19 @@ main .faq .faq-list .faq-block {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
+    box-sizing: border-box;
 }
 main .faq .faq-list .faq-block h3,
 main .faq .faq-list .faq-block p {
     position: relative;
-    left: 3vw;
+    left: 2vw;
+    padding-right: 5rem;
 }
 main .faq .faq-list .faq-block h3 {
     font-size: 2vw;
     font-weight: 100;
     letter-spacing: 0.1vw;
+    margin-bottom: -0.4vw;
 }
  .faq-list .faq-block p {
     font-family: "Poppins", sans-serif;
