@@ -907,7 +907,7 @@ main .faq .socials a:hover {
     }
     header {
         z-index: 2000;
-        padding: 0rem 2rem;
+        padding: 0rem 0rem 0rem 2rem;
         /* background-color: #9a2fbe63; */
         backdrop-filter: blur(6px);
     }
@@ -919,6 +919,8 @@ main .faq .socials a:hover {
         font-size: 1.25rem;
         font-weight: 400;
         color: red;
+        display: flex;
+        flex-direction: row-reverse;
     }
     header .nav-list ul li a{
         font-size: 1.25rem;
@@ -927,6 +929,7 @@ main .faq .socials a:hover {
     }
     header .nav-list ul .buy-button {
         display: none;
+        visibility: hidden;
     }
     main {
         position: relative;
