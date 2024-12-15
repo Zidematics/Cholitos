@@ -727,7 +727,21 @@ main .buy-token .buy-image img {
     height: auto;
     display: block;
     margin-top: 18%;
+    animation: shake 1.2s infinite;
     /* max-width: 100%; */
+}
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-5px); }
+    20% { transform: translateX(5px); }
+    30% { transform: translateX(-5px); }
+    40% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    60% { transform: translateX(5px); }
+    70% { transform: translateX(-5px); }
+    80% { transform: translateX(5px); }
+    90% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
 }
 /* @meda (max-width: 480px) {
     main .buy-token .buy-image img {
@@ -759,7 +773,9 @@ main .team .team-embers {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 9rem;
+    padding: 15rem;
+    box-sizing: content-box;
+    gap: 2rem;
 }
 main .team .team-embers img {
     width: 15vw;
@@ -1230,6 +1246,7 @@ main .faq .socials a:hover {
         max-width: 100rem; /* Ensure the image doesn't exceed the parent width */
         height: auto; /* Maintain the aspect ratio */
         border-radius: 0px;
+        margin-top: 2rem;
     }
     main .faq {
         z-index: 100;
