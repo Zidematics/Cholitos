@@ -1216,7 +1216,7 @@ main .faq .socials a:hover {
         /* Use the first image as the background */
         overflow: hidden; /* Prevent content from spilling out */
         background-size: cover;
-        height: 140vh;
+        height: 100vh;
     }
     main .team #team {
         text-shadow: 0.15rem 0.15rem #9A2FBE; /* Adjust header size for mobile */
@@ -1246,6 +1246,8 @@ main .faq .socials a:hover {
         max-width: 100rem; /* Ensure the image doesn't exceed the parent width */
         height: auto; /* Maintain the aspect ratio */
         border-radius: 0px;
+    }
+    main .team .team-embers img:nth-of-type(3) {
         margin-top: 2rem;
     }
     main .faq {
