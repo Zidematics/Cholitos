@@ -1271,7 +1271,7 @@ main .faq .socials a:hover {
 }
     main .faq .faq-list .faq-block h3 {
         font-size: 8vw;
-        width: 95%;
+        width: 90%;
     }
     main .faq .socials a {
         width: 1.5vw;
@@ -1281,7 +1281,7 @@ main .faq .socials a:hover {
     .faq-list .faq-block p {
         font-size: 0.9rem; /* Reduce text size for mobile */
         line-height: 1.5;
-        width: 90%;
+        width: 92%;
     }
     main .blur-bg {
         position: fixed;
