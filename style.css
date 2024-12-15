@@ -1265,9 +1265,13 @@ main .faq .socials a:hover {
         padding: 0 2px;
         align-items: center;
     }
+    main .faq .faq-list .faq-block h3,
+    main .faq .faq-list .faq-block p {
+        left: 5vw;
+}
     main .faq .faq-list .faq-block h3 {
         font-size: 8vw;
-        width: 100%;
+        width: 95%;
     }
     main .faq .socials a {
         width: 1.5vw;
@@ -1277,7 +1281,7 @@ main .faq .socials a:hover {
     .faq-list .faq-block p {
         font-size: 0.9rem; /* Reduce text size for mobile */
         line-height: 1.5;
-        width: 95%;
+        width: 90%;
     }
     main .blur-bg {
         position: fixed;
