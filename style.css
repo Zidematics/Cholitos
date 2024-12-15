@@ -1258,7 +1258,6 @@ main .faq .socials a:hover {
         width: 90%;
     }
     main .faq .faq-list .faq-block {
-        margin: 1vw;
         border-radius: 10px;
         padding: 0 2px;
         align-items: center;
@@ -1274,6 +1273,70 @@ main .faq .socials a:hover {
     .faq-list .faq-block p {
         font-size: 0.9rem; /* Reduce text size for mobile */
         line-height: 1.5;
+        width: 95%;
+    }
+    main .blur-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+        visibility: visible;
+        transition: .2s ease;
+        background-color: rgba(0, 0, 0, 0.403);
+        backdrop-filter: blur(10px);
+        overflow: visible;
+    }
+    /* Popup container */
+    main .blur-bg #phase-popup {
+        width: 90%;
+        max-width: 100%;
+        gap: -10rem;
+        padding: 0rem 2rem 4rem 2rem;
+    }
+    main .blur-bg #phase-popup .phase-popup-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        flex-direction: row;
+        position: relative;
+        height: 8rem;
+    }
+    main .blur-bg #phase-popup .phase-popup-header .pop-up-header-span {
+        width: 2rem;
+        padding: 1.6392rem 1.6392rem;
+        display: none;
+    }
+    main .blur-bg #phase-popup .phase-popup-header h2 {
+        font-size: 8vw;
+    }
+    main .blur-bg #phase-popup .phase-popup-header .cancel-button {
+        box-shadow: 2px 2px white;
+        border-radius: 10px;
+        height: 2rem;
+        width: 2rem;
+    }
+    main .blur-bg #phase-popup .phase-popup-header .cancel-button img {
+        width: 4vw;
+        pointer-events: none;
+    }
+    main .blur-bg #phase-popup .phase-popup-body {
+        padding-right: 0;
+    }
+    main .blur-bg #phase-popup .phase-popup-body img {
+        display: none;
+    }
+    main .blur-bg #phase-popup .phase-popup-body ul {
+        width: 100%;
+    }
+    main .blur-bg #phase-popup .phase-popup-body ul li {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
     }
 }
 

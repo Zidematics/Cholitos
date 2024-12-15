@@ -73,4 +73,3 @@ function hidePopup1() {
 function hidePopup() {
     popupBg.style.visibility = 'hidden'
 }
-
