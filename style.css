@@ -772,6 +772,7 @@ main .faq {
     justify-content: center;
     padding: 3rem 10rem 5vw 10rem;
     width: 100%;
+    margin: auto;
 }
 main .faq #faq {
     text-shadow: 0.3rem 0.3rem black;
@@ -797,12 +798,13 @@ main .faq .faq-list .faq-block {
     margin: 1vw;
     height: auto;
     border-radius: 20px;
-    color: white;
+    color: black;
     display: block;
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
     box-sizing: border-box;
+    background-color: #B7FCB1;
 }
 main .faq .faq-list .faq-block h3,
 main .faq .faq-list .faq-block p {
@@ -827,6 +829,7 @@ main .faq .socials {
     align-items: center;
     position: relative;
     gap: 3vw;
+    padding-top: 5rem;
 }
 main .faq .socials a {
     border-radius: 100%;
@@ -890,7 +893,7 @@ main .faq .socials a:hover {
         z-index: 2000;
         padding: 0rem 2rem;
         /* background-color: #9a2fbe63; */
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(6px);
     }
     header .logo img {
         width: 40%;
@@ -1285,7 +1288,7 @@ main .faq .socials a:hover {
         justify-content: center;
         align-items: center;
         z-index: 2000;
-        visibility: visible;
+        visibility: hidden;
         transition: .2s ease;
         background-color: rgba(0, 0, 0, 0.403);
         backdrop-filter: blur(10px);
