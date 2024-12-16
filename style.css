@@ -764,7 +764,7 @@ main .buy-token .buy-image img {
     height: auto;
     display: block;
     margin-top: 18%;
-    animation: shake 1.2s infinite;
+    animation: shake 1s infinite;
     /* max-width: 100%; */
 }
 @keyframes shake {
@@ -816,6 +816,34 @@ main .team .team-embers {
 }
 main .team .team-embers img {
     width: 15vw;
+}
+main .team a {
+    border-radius: 15px;
+    /* height: 70px; */
+    color: black;
+    background: #ffffff;
+    /* stroke: 1px solid #9A2FBE; */
+    box-shadow: 4px 4px #000000;
+    display: flex;
+    height: 5vw;
+    padding: 0rem 3.6392rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.9375remrem;
+    border: .082rem solid #000000;
+    /* box-shadow: .3278rem .3278rem #000; */ 
+    transition: .35s ease;
+    /* mix-blend-mode: color-dodge; */
+    background-size: cover;
+    text-decoration: none;  
+    bottom: 5%;
+    font-size: 2.1466vw;
+    position: absolute;
+}
+main .team a:hover {
+    box-shadow: none;
+    background-color: #E8D040;
+    transform: translate(2px, 2px);
 }
 main .faq {
     position: relative;
