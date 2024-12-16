@@ -25,8 +25,6 @@ container.addEventListener('mouseleave', () => {
     image.style.transform = 'translate(0, 0)';
 });
 
-
-
 // Onscroll effect
 
 window.onscroll = function() {myFunction()};
@@ -73,3 +71,4 @@ function hidePopup1() {
 function hidePopup() {
     popupBg.style.visibility = 'hidden'
 }
+

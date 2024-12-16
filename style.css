@@ -12,10 +12,47 @@ body {
     overscroll-behavior-x: none;
     -webkit-text-size-adjust: none; */
 }
+.scrolling-headline {
+    position: fixed;
+    width: 100%; /* Take up full width of the viewport */
+    overflow: hidden; /* Hide anything that moves out of bounds */
+    background-color: #c9f1ff; /* Bright background for visibility */
+    padding: 10px 0;
+    text-align: center;
+    top: 0;
+    height: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40rem;
+    text-decoration: none;
+  }
+  
+/* Scrolling text animation */
+.scrolling-headline p {
+    display: inline-block;
+    white-space: nowrap;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    animation: scroll-horizontal 15s linear infinite; /* Scrolling animation */
+}
+  
+/* Animation keyframes */
+@keyframes scroll-horizontal {
+    0% {
+      transform: translateX(100%); /* Start outside the right of the screen */
+    }
+    100% {
+      transform: translateX(-100%); /* Move outside the left of the screen */
+    }
+}
 header {
     /* position: fixed; */
     z-index: 100;
-    top: 0rem;
+    top: 30px;
     left: 0;
     right: 0;
     padding: .5rem 9rem;
@@ -867,6 +904,7 @@ main .faq .socials a:hover {
     background-color: #65fc57;
     transform: translate(2px, 2px);
 }
+
 
 
 @media screen and (max-width: 1040px) {
