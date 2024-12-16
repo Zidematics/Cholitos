@@ -943,11 +943,20 @@ main .faq .socials a:hover {
     body {
         background-color: #9A2FBE;
     }
+    .scrolling-headline {
+        gap: 10rem;
+    }
+    .scrolling-headline p {
+        font-size: 0.7rem;
+    }
     header {
         z-index: 2000;
-        padding: 0rem 0rem 0rem 2rem;
+        padding: 2rem 0rem 0rem 2rem;
         /* background-color: #9a2fbe63; */
         backdrop-filter: blur(6px);
+        top: 20px;
+        display: flex;
+        flex-direction: row;
     }
     header .logo img {
         width: 40%;
@@ -970,6 +979,7 @@ main .faq .socials a:hover {
         visibility: hidden;
     }
     main {
+        top: 2rem;
         position: relative;
         width: 100%;
         overflow: hidden;
