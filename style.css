@@ -1286,6 +1286,7 @@ main .faq .socials a:hover {
         border-radius: 10px;
         padding: 0 2px;
         align-items: center;
+        margin-bottom: 2rem;
     }
     main .faq .faq-list .faq-block h3,
     main .faq .faq-list .faq-block p {
