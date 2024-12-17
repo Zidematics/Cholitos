@@ -15,8 +15,8 @@ body {
 .scrolling-headline {
     position: fixed;
     width: 100%; /* Take up full width of the viewport */
-    overflow: hidden; /* Hide anything that moves out of bounds */
-    background-color: #c9f1ff; /* Bright background for visibility */
+    overflow: hidden;
+    background: linear-gradient(to right, #c9f1ff, #a8ffe9); /* Bright background for visibility */
     padding: 10px 0;
     text-align: center;
     top: 0;
