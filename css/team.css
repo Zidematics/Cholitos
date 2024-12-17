@@ -1,0 +1,174 @@
+body {
+    font-family: "Creepster", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+    background-color: #9A2FBE;
+}
+.scrolling-headline {
+    position: fixed;
+    width: 100%; /* Take up full width of the viewport */
+    overflow: hidden; /* Hide anything that moves out of bounds */
+    background-color: #c9f1ff; /* Bright background for visibility */
+    padding: 10px 0;
+    text-align: center;
+    top: 0;
+    height: 20px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40rem;
+    text-decoration: none;
+  }
+  
+/* Scrolling text animation */
+.scrolling-headline p {
+    display: inline-block;
+    white-space: nowrap;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    animation: scroll-horizontal 15s linear infinite; /* Scrolling animation */
+}
+  
+/* Animation keyframes */
+@keyframes scroll-horizontal {
+    0% {
+      transform: translateX(100%); /* Start outside the right of the screen */
+    }
+    100% {
+      transform: translateX(-100%); /* Move outside the left of the screen */
+    }
+}
+header {
+    /* position: fixed; */
+    z-index: 100;
+    top: 30px;
+    left: 0;
+    right: 0;
+    padding: .5rem 9rem;
+    position: sticky;
+    margin-top: 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo img {
+    /* width: 100%;
+    height: 100%; */
+    width: 6.3vw;
+    height: 6.3vw;
+    cursor: pointer;
+}
+header .nav-list ul {
+    mix-blend-mode: color-dodge;
+    display: flex;
+    /* flex-direction: row; */
+    font-size: 2.1466vw;
+    font-weight: 400;
+    line-height: normal;
+    /* letter-spacing: -.0215rem; */
+    align-items: center;
+    gap: 1rem;
+}
+header .nav-list ul li {
+    padding: 15px 2rem;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+}
+header .nav-list ul li .team-link {
+    color: #B7FCB1;
+}
+header .nav-list ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .35s ease;
+    mix-blend-mode: difference;
+}
+header .nav-list ul li a:hover {
+    color: #B7FCB1;
+}
+header .nav-list ul .buy-button {
+    border-radius: 15px;
+    /* height: 70px; */
+    color: black;
+    background: #B7FCB1;
+    /* stroke: 1px solid #9A2FBE; */
+    box-shadow: 4px 4px #9A2FBE;
+    display: flex;
+    height: 3.9341rem;
+    padding: 0rem 1.6392rem;
+    justify-content: center;
+    align-items: center;
+    border: .082rem solid #9A2FBE;
+    /* box-shadow: .3278rem .3278rem #000; */ 
+    transition: .35s ease;
+    mix-blend-mode: color-dodge;
+    background-size: cover;
+    text-decoration: none;
+}
+header .nav-list ul .buy-button:hover {
+    box-shadow: none;
+    background-color: #65fc57;
+    transform: translate(2px, 2px);
+}
+main .team {
+    position: relative;
+    padding: 4rem 9rem;
+}
+main .team .team-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+main .team .team-header h1 {
+    font-size: 5vw;
+    font-weight: 100;
+    text-shadow: 0.3rem 0.3rem #000000;
+    color: white;
+    margin: 0;
+}
+main .team .team-header p {
+    width: 100%;
+    font-size: 1.25vw;
+    padding-top: 2%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+main .team .team-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    gap: 0rem;
+}
+main .team .team-members .member {
+    width: 100%;
+    height: fit-content;
+    border-radius: 30px;
+    overflow: hidden;
+}
+main .team .team-members .member .cholian {
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+main .team .team-members .member .cholian img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+main .team .team-members .member .info-popup {
+    -webkit-
+}
