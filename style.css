@@ -70,7 +70,6 @@ header .logo img {
     cursor: pointer;
 }
 header .nav-list ul {
-    mix-blend-mode: color-dodge;
     display: flex;
     /* flex-direction: row; */
     font-size: 2.1466vw;
@@ -91,7 +90,6 @@ header .nav-list ul li a {
     text-decoration: none;
     color: white;
     transition: .35s ease;
-    mix-blend-mode: difference;
 }
 header .nav-list ul li a:hover {
     color: #B7FCB1;
@@ -111,7 +109,6 @@ header .nav-list ul .buy-button {
     border: .082rem solid #9A2FBE;
     /* box-shadow: .3278rem .3278rem #000; */ 
     transition: .35s ease;
-    mix-blend-mode: color-dodge;
     background-size: cover;
     text-decoration: none;
 }
@@ -839,6 +836,7 @@ main .team a {
     bottom: 5%;
     font-size: 2.1466vw;
     position: absolute;
+    margin: auto;
 }
 main .team a:hover {
     box-shadow: none;
@@ -992,25 +990,132 @@ main .faq .copyright {
         display: flex;
         flex-direction: row;
     }
+    header .logo {
+        z-index: 200;
+    }
     header .logo img {
         width: 40%;
         height: auto;
     }
+    header .nav-bar {
+        border-radius: 100%;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        right: 2rem;
+        top: 32%;
+        overflow: hidden;
+        border: 1px solid #9A2FBE;
+        box-shadow: 3px 3px white;
+        transition: .35s ease;
+        cursor: pointer;
+        z-index: 200;
+    }
+    header .nav-bar:hover {
+        box-shadow: none;
+        transform: translate(2px, 2px);
+    }
+    header .nav-bar:hover .hamburger {
+        background-color: #65fc57;
+    }
+    header .nav-bar .hamburger {  
+        display: flex;
+        flex-direction: column;
+        background-color: #B7FCB1;
+        width: 100%;
+        height: 100%;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        transition: .35s ease;
+    }
+    header .nav-bar .hamburger div {
+        height: 2px;
+        width: 40px;
+        background-color: #9A2FBE;
+        overflow: visible;
+    }
+    header .close-bar {
+        border-radius: 100%;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        right: 2rem;
+        top: 32%;
+        overflow: hidden;
+        border: 1px solid #9A2FBE;
+        box-shadow: 3px 3px white;
+        transition: .35s ease;
+        cursor: pointer;
+        display: none;
+        z-index: 200;
+    }
+    header .close-bar:hover {
+        box-shadow: none;
+        background-color: red;
+        transform: translate(2px, 2px);
+    }
+    header .close-bar:hover .close-icon {
+        background-color: #65fc57;
+    }
+    header .close-bar .close-icon {  
+        display: flex;
+        flex-direction: column;
+        background-color: #B7FCB1;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        transition: .35s ease;
+    }
+    header .close-bar .close-icon div {
+        height: 2px;
+        width: 40px;
+        background-color: #9A2FBE;
+        overflow: visible;
+    }
+    header .close-bar .close-icon div:first-of-type {
+        transform: rotate(45deg);
+    }
+    header .close-bar .close-icon div:nth-of-type(2) {
+        transform: rotate(-45deg);
+    }
+    header .nav-list {
+        position: absolute;
+        height: 70vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        /* background-color: red; */
+        background-color: #9A2FBE;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        box-shadow: 0px 4px 50px #00000087;
+        display: none;
+    }
     header .nav-list ul {
+        position: relative;
+        top: 30%;
         font-size: 1.25rem;
         font-weight: 400;
-        color: red;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
+        justify-content: center;
     }
     header .nav-list ul li a{
-        font-size: 1.25rem;
+        font-size: 3rem;
         font-weight: 400;
         color: white;
     }
     header .nav-list ul .buy-button {
-        display: none;
-        visibility: hidden;
+        border-radius: 10px;
+        height: 50px;
+        font-size: 20px;
+        position: relative;
+        width: 60vw;
     }
     main {
         top: 2rem;
@@ -1018,7 +1123,7 @@ main .faq .copyright {
         width: 100%;
         overflow: hidden;
         height: auto;
-    }
+    } 
     main h1:not(#first-h1) {
         font-size: 10vw;
         text-align: center;
@@ -1301,7 +1406,7 @@ main .faq .copyright {
         /* Use the first image as the background */
         overflow: hidden; /* Prevent content from spilling out */
         background-size: cover;
-        height: 100vh;
+        height: 110vh;
     }
     main .team #team {
         text-shadow: 0.15rem 0.15rem #9A2FBE; /* Adjust header size for mobile */
@@ -1322,7 +1427,7 @@ main .faq .copyright {
         width: 100%;
         position: relative;
         margin-left: -14%;
-        top: 0;
+        top: -5%;
     }
     
     /* Styling for team member images */
@@ -1334,6 +1439,19 @@ main .faq .copyright {
     }
     main .team .team-embers img:nth-of-type(3) {
         margin-top: 2rem;
+    }
+    main .team a {
+        border-radius: 10px;
+        height: 50px;
+        font-size: 20px;
+        width: 100%;
+        position: absolute;
+        bottom: 6%;
+        border-radius: 10px;
+        height: 50px;
+        font-size: 20px;
+        width: 40vw;
+        left: 15%;
     }
     main .faq {
         z-index: 100;
@@ -1361,7 +1479,7 @@ main .faq .copyright {
         position: static;
     }
     main .faq .faq-list {
-        padding: 0rem 2rem;
+        padding: 0rem 2.8rem;
         width: 90%;
     }
     main .faq .faq-list .faq-block {
@@ -1373,21 +1491,26 @@ main .faq .copyright {
     main .faq .faq-list .faq-block h3,
     main .faq .faq-list .faq-block p {
         left: 5vw;
-}
+    }
     main .faq .faq-list .faq-block h3 {
-        font-size: 8vw;
+        font-size: 5vw;
         width: 90%;
         margin-top: 1rem;
     }
-    main .faq .socials a {
-        width: 1.5vw;
-        height: 1.5vw;
-        margin-top: 10%;
-    }
-    .faq-list .faq-block p {
+    main .faq .faq-list .faq-block p {
         font-size: 0.9rem; /* Reduce text size for mobile */
         line-height: 1.5;
-        width: 92%;
+        color: #000000; /* Text color for readability */
+        max-width: 100%; 
+        text-align: left;
+        width: 90%;
+    }
+    main .faq .socials a {
+        margin-top: 10%;
+        padding: 3rem;
+    }
+    main .faq .copyright {
+        font-size: 4vw;
     }
     main .blur-bg {
         position: fixed;

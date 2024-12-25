@@ -65,8 +65,10 @@ header .logo img {
     height: 6.3vw;
     cursor: pointer;
 }
+header .nav-bar {
+    display: none;
+}
 header .nav-list ul {
-    mix-blend-mode: color-dodge;
     display: flex;
     /* flex-direction: row; */
     font-size: 2.1466vw;
@@ -90,7 +92,6 @@ header .nav-list ul li a {
     text-decoration: none;
     color: white;
     transition: .35s ease;
-    mix-blend-mode: difference;
 }
 header .nav-list ul li a:hover {
     color: #B7FCB1;
@@ -110,7 +111,6 @@ header .nav-list ul .buy-button {
     border: .082rem solid #9A2FBE;
     /* box-shadow: .3278rem .3278rem #000; */ 
     transition: .35s ease;
-    mix-blend-mode: color-dodge;
     background-size: cover;
     text-decoration: none;
 }
@@ -119,9 +119,11 @@ header .nav-list ul .buy-button:hover {
     background-color: #65fc57;
     transform: translate(2px, 2px);
 }
+main {
+    padding: 4rem 9rem;
+}
 main .team {
     position: relative;
-    padding: 4rem 9rem;
 }
 main .team .team-header {
     display: flex;
@@ -298,4 +300,209 @@ main .faq .copyright {
     font-weight: 100;
     letter-spacing: 0.1vw;
     color: white;
+}
+@media (max-width: 576px) {
+    body {
+        background-color: #9A2FBE;
+    }
+    .scrolling-headline {
+        gap: 10rem;
+    }
+    .scrolling-headline p {
+        font-size: 0.7rem;
+    }
+    header {
+        z-index: 2000;
+        padding: 2rem 0rem 0rem 2rem;
+        /* background-color: #9a2fbe63; */
+        backdrop-filter: blur(6px);
+        top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    header .logo {
+        z-index: 200;
+    }
+    header .logo img {
+        width: 40%;
+        height: auto;
+    }
+    header .nav-bar {
+        border-radius: 100%;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        right: 2rem;
+        top: 32%;
+        overflow: hidden;
+        border: 1px solid #9A2FBE;
+        box-shadow: 3px 3px white;
+        transition: .35s ease;
+        cursor: pointer;
+        z-index: 2000;
+        display: block;
+    }
+    header .nav-bar:hover {
+        box-shadow: none;
+        transform: translate(2px, 2px);
+    }
+    header .nav-bar:hover .hamburger {
+        background-color: #65fc57;
+    }
+    header .nav-bar .hamburger {  
+        display: flex;
+        flex-direction: column;
+        background-color: #B7FCB1;
+        width: 100%;
+        height: 100%;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        transition: .35s ease;
+    }
+    header .nav-bar .hamburger div {
+        height: 2px;
+        width: 40px;
+        background-color: #9A2FBE;
+        overflow: visible;
+    }
+    header .close-bar {
+        border-radius: 100%;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        right: 2rem;
+        top: 32%;
+        overflow: hidden;
+        border: 1px solid #9A2FBE;
+        box-shadow: 3px 3px white;
+        transition: .35s ease;
+        cursor: pointer;
+        display: none;
+        z-index: 200;
+    }
+    header .close-bar:hover {
+        box-shadow: none;
+        background-color: red;
+        transform: translate(2px, 2px);
+    }
+    header .close-bar:hover .close-icon {
+        background-color: #65fc57;
+    }
+    header .close-bar .close-icon {  
+        display: flex;
+        flex-direction: column;
+        background-color: #B7FCB1;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        overflow: visible;
+        transition: .35s ease;
+    }
+    header .close-bar .close-icon div {
+        height: 2px;
+        width: 40px;
+        background-color: #9A2FBE;
+        overflow: visible;
+    }
+    header .close-bar .close-icon div:first-of-type {
+        transform: rotate(45deg);
+    }
+    header .close-bar .close-icon div:nth-of-type(2) {
+        transform: rotate(-45deg);
+    }
+    header .nav-list {
+        position: absolute;
+        height: 70vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        /* background-color: red; */
+        background-color: #9A2FBE;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        box-shadow: 0px 4px 50px #00000087;
+        top: -150vw;
+    }
+    header .nav-list ul {
+        position: relative;
+        top: 30%;
+        font-size: 1.25rem;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header .nav-list ul li a{
+        font-size: 3rem;
+        font-weight: 400;
+        color: white;
+    }
+    header .nav-list ul .buy-button {
+        border-radius: 10px;
+        height: 50px;
+        font-size: 20px;
+        position: relative;
+        width: 60vw;
+    }
+    main {
+        padding: 4rem 2rem;
+    }
+    main .team .team-header h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        text-shadow: 0.15rem 0.15rem #000000;
+    }
+    main .team .team-header p {
+        font-size: 0.9rem;
+    }
+    main .team .team-members {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 0;
+        margin-top: 15%;
+    }
+    main .team .team-members .member {
+        width: 100%;
+        height: 110%;
+        box-sizing: initial;
+    }
+    main .team .team-members .member img {
+        background-size: cover;
+        height: auto;
+        width: auto;
+        scale: 1.1;
+    }
+    main .team .team-members .member .info-popup {
+        padding: 0 20px;
+    }
+    main .team .team-members .member .info-popup h3{
+        font-size: 2.5rem;
+        margin-top: 7rem;
+    }
+    main .team .team-members .member .info-popup p {
+        font-size: 1.2rem;
+        padding-top: 3%;
+    }
+    main .team .team-members .member .info-popup .socials {
+        gap: 3%;
+        padding-top: 5%;
+    }
+    main .team .team-members .member .info-popup .socials a {
+        padding: 2rem;
+    }
+    main .faq {
+        margin-top: 40%;
+        position: relative;
+    }
+    main .faq .socials a {
+        padding: 3rem;
+    }
+    main .faq .copyright {
+        font-size: 4vw;
+    }
 }
