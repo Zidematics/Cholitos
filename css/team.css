@@ -65,9 +65,6 @@ header .logo img {
     height: 6.3vw;
     cursor: pointer;
 }
-header .nav-bar {
-    display: none;
-}
 header .nav-list ul {
     display: flex;
     /* flex-direction: row; */
