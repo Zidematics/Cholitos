@@ -542,7 +542,7 @@ main .blur-bg {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 10000;
     visibility: hidden;
     transition: .2s ease;
     background-color: rgba(0, 0, 0, 0.403);
@@ -1010,6 +1010,7 @@ main .faq .copyright {
         transition: .35s ease;
         cursor: pointer;
         z-index: 200;
+        visibility: visible;
     }
     header .nav-bar:hover {
         box-shadow: none;
@@ -1048,7 +1049,7 @@ main .faq .copyright {
         box-shadow: 3px 3px white;
         transition: .35s ease;
         cursor: pointer;
-        display: none;
+        visibility: hidden;
         z-index: 200;
     }
     header .close-bar:hover {
@@ -1086,7 +1087,7 @@ main .faq .copyright {
         position: absolute;
         height: 70vh;
         width: 100%;
-        top: 0;
+        top: -150vw;
         left: 0;
         z-index: 100;
         /* background-color: red; */
@@ -1094,7 +1095,6 @@ main .faq .copyright {
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
         box-shadow: 0px 4px 50px #00000087;
-        display: none;
     }
     header .nav-list ul {
         position: relative;
@@ -1479,8 +1479,8 @@ main .faq .copyright {
         position: static;
     }
     main .faq .faq-list {
-        padding: 0rem 2.8rem;
-        width: 90%;
+        padding: 2rem;
+        position: relative;
     }
     main .faq .faq-list .faq-block {
         border-radius: 10px;

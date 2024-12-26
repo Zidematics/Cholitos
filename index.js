@@ -72,3 +72,22 @@ function hidePopup() {
     popupBg.style.visibility = 'hidden'
 }
 
+
+// Navbar functionality
+const navBar = document.querySelector('header .nav-bar');
+const closeBar = document.querySelector('header .close-bar');
+const navList = document.querySelector('header .nav-list');
+
+// open navbar function
+
+function dropDownNavbar() {
+    navList.style.top = '0';
+    navBar.style.visibility = 'hidden';
+    closeBar.style.visibility = 'visible'
+}
+
+function closeNavbar() {
+    navList.style.top = '-150vw';
+    closeBar.style.visibility = 'hidden';
+    navBar.style.visibility = 'visible';
+}
