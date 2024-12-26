@@ -1070,6 +1070,7 @@ main .faq .copyright {
         justify-content: center;
         overflow: visible;
         transition: .35s ease;
+        visibility: visible;
     }
     header .close-bar .close-icon div {
         height: 2px;
