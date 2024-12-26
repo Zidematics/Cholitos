@@ -1049,6 +1049,7 @@ main .faq .copyright {
         box-shadow: 3px 3px white;
         transition: .35s ease;
         cursor: pointer;
+        
         visibility: hidden;
         z-index: 200;
     }
