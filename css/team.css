@@ -339,8 +339,8 @@ main .faq .copyright {
         box-shadow: 3px 3px white;
         transition: .35s ease;
         cursor: pointer;
-        z-index: 2000;
-        display: block;
+        z-index: 200;
+        visibility: visible;
     }
     header .nav-bar:hover {
         box-shadow: none;
@@ -379,7 +379,7 @@ main .faq .copyright {
         box-shadow: 3px 3px white;
         transition: .35s ease;
         cursor: pointer;
-        display: none;
+        visibility: hidden;
         z-index: 200;
     }
     header .close-bar:hover {
@@ -417,7 +417,7 @@ main .faq .copyright {
         position: absolute;
         height: 70vh;
         width: 100%;
-        top: 0;
+        top: -150vw;
         left: 0;
         z-index: 100;
         /* background-color: red; */
@@ -425,7 +425,6 @@ main .faq .copyright {
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
         box-shadow: 0px 4px 50px #00000087;
-        top: -150vw;
     }
     header .nav-list ul {
         position: relative;
