@@ -1049,7 +1049,6 @@ main .faq .copyright {
         box-shadow: 3px 3px white;
         transition: .35s ease;
         cursor: pointer;
-        
         visibility: hidden;
         z-index: 200;
     }
@@ -1071,7 +1070,6 @@ main .faq .copyright {
         justify-content: center;
         overflow: visible;
         transition: .35s ease;
-        visibility: visible;
     }
     header .close-bar .close-icon div {
         height: 2px;
