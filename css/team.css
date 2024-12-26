@@ -381,7 +381,6 @@ main .faq .copyright {
     }
     header .close-bar:hover {
         box-shadow: none;
-        background-color: red;
         transform: translate(2px, 2px);
     }
     header .close-bar:hover .close-icon {
@@ -431,6 +430,7 @@ main .faq .copyright {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        left: -5%;
     }
     header .nav-list ul li a{
         font-size: 3rem;

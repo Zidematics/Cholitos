@@ -1054,7 +1054,6 @@ main .faq .copyright {
     }
     header .close-bar:hover {
         box-shadow: none;
-        background-color: red;
         transform: translate(2px, 2px);
     }
     header .close-bar:hover .close-icon {
@@ -1099,6 +1098,7 @@ main .faq .copyright {
     header .nav-list ul {
         position: relative;
         top: 30%;
+        left: -5%;
         font-size: 1.25rem;
         font-weight: 400;
         display: flex;
