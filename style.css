@@ -777,12 +777,6 @@ main .buy-token .buy-image img {
     90% { transform: translateX(-5px); }
     100% { transform: translateX(0); }
 }
-/* @meda (max-width: 480px) {
-    main .buy-token .buy-image img {
-        width: 90%;
-        margin: 0 auto;
-    }
-} */
 
 main .team {
     position: relative;
@@ -795,15 +789,12 @@ main .team {
     margin: auto;
     width: 100%;
     padding-top: 5%;
-    /* display: flex;
-    justify-content: center;
-    margin: auto; */
 }
 main .team #team {
     text-shadow: 0.3rem 0.3rem black;
     color: white;
 }
-main .team .team-embers {
+/* main .team .team-embers {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -813,13 +804,11 @@ main .team .team-embers {
 }
 main .team .team-embers img {
     width: 15vw;
-}
+} */
 main .team a {
     border-radius: 15px;
-    /* height: 70px; */
     color: black;
     background: #ffffff;
-    /* stroke: 1px solid #9A2FBE; */
     box-shadow: 4px 4px #000000;
     display: flex;
     height: 5vw;
@@ -828,9 +817,7 @@ main .team a {
     align-items: center;
     border-radius: 0.9375remrem;
     border: .082rem solid #000000;
-    /* box-shadow: .3278rem .3278rem #000; */ 
     transition: .35s ease;
-    /* mix-blend-mode: color-dodge; */
     background-size: cover;
     text-decoration: none;  
     bottom: 5%;
@@ -843,6 +830,116 @@ main .team a:hover {
     background-color: #E8D040;
     transform: translate(2px, 2px);
 }
+
+
+/* New teams style */
+
+main .team .teamer {
+    padding: 9rem;
+}
+main .team .teamer .team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2%;
+    margin-top: 10%;
+}
+main .team .teamer .team-members .member {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 4px 4px #000000;
+    transition: 0.35s ease;
+    border: .082rem solid #000000;
+}
+main .team .teamer .team-members .member:hover {  
+    transform: rotate(10%);
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
+main .team .teamer .team-members .member .info-popup {
+    position: absolute;
+    padding: 0vw 1vw;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0%;
+    gap: 1vw;
+    background: linear-gradient(rgba(0, 0, 0, 0), black);
+    z-index: 100;
+    transition: 0.5s ease;
+}
+main .team .teamer .team-members .member:hover .info-popup {
+    height: 80%;
+}
+main .team .teamer .team-members .member .info-popup h3{
+    font-size: 3vw;
+    font-weight: 100;
+    letter-spacing: 0.1vw;
+    color: white;
+    padding: 0;
+    margin: 0;
+    margin-top: 5rem;
+}
+main .team .teamer .team-members .member .info-popup p {
+    font-size: 1.25vw;;
+    padding-top: 2%;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+main .team .teamer .team-members .member .info-popup .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 1vw;
+    padding-top: 5%;
+}
+main .team .teamer .team-members .member .info-popup .socials a {
+    border-radius: 100%;
+    background: #B7FCB1;
+    box-shadow: 4px 4px #ffffff;
+    display: flex;
+    height: 1.5vw;
+    width: 1.5vw;
+    padding: 1.6392rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.9375remrem;
+    border: .082rem solid #000000; 
+    transition: .35s ease;
+    background-size: cover;
+}
+main .team .teamer .team-members .member .info-popup .socials a:hover {
+    box-shadow: none;
+    background-color: #65fc57;
+    transform: translate(2px, 2px);
+}
+main .team .teamer .team-members .member .cholian {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: 0.5s ease;
+}
+main .team .teamer .team-members .member:hover .cholian {
+    scale: 1.15;
+}
+main .team .teamer .team-members .member .cholian img {
+    width: 100%;
+    height: 100%;
+}
+
+
 main .faq {
     position: relative;
     height: auto;
@@ -1094,6 +1191,7 @@ main .faq .copyright {
         border-bottom-left-radius: 40px;
         border-bottom-right-radius: 40px;
         box-shadow: 0px 4px 50px #00000087;
+        transition: 1s ease;
     }
     header .nav-list ul {
         position: relative;
@@ -1104,6 +1202,7 @@ main .faq .copyright {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        left: -5%;
     }
     header .nav-list ul li a{
         font-size: 3rem;
