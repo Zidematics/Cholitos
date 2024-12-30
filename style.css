@@ -794,7 +794,7 @@ main .team #team {
     text-shadow: 0.3rem 0.3rem black;
     color: white;
 }
-/* main .team .team-embers {
+main .team .team-embers {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -804,7 +804,7 @@ main .team #team {
 }
 main .team .team-embers img {
     width: 15vw;
-} */
+}
 main .team a {
     border-radius: 15px;
     color: black;
@@ -834,7 +834,7 @@ main .team a:hover {
 
 /* New teams style */
 
-main .team .teamer {
+/* main .team .teamer {
     padding: 9rem;
 }
 main .team .teamer .team-members {
@@ -937,7 +937,7 @@ main .team .teamer .team-members .member:hover .cholian {
 main .team .teamer .team-members .member .cholian img {
     width: 100%;
     height: 100%;
-}
+} */
 
 
 main .faq {
