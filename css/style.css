@@ -1365,11 +1365,11 @@ main .faq .copyright {
         align-items: center; /* Center horizontally */
         justify-content: center; /* Center vertically */
         height: 240vw; /* Full viewport height */
-        background-image: url('src/orange background.svg'); /* Set the first image as background */
+        background-image: url('src\orange background.svg'); /* Set the first image as background */
         background-size: cover; /* Ensure the background covers the entire div */
         background-position: center; /* Center the background image */
         text-align: center; /* Center text inside the div */
-        padding: 4rem 2rem; /* Padding around the container */
+        padding: 4rem 2rem; /* Padding around the contaziner */
         position: relative; /* Ensure the pie chart and other elements are positioned on top of the background */
         box-sizing: cover; /* Ensure padding is included within the element’s total width/height */
     }

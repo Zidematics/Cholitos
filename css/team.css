@@ -82,9 +82,9 @@ header .nav-list ul li {
     text-decoration: none;
     justify-content: center;
 }
-header .nav-list ul li .team-link {
+/* header .nav-list ul li .team-link {
     color: #B7FCB1;
-}
+} */
 header .nav-list ul li a {
     text-decoration: none;
     color: white;
